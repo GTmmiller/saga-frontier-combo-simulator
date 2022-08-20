@@ -1,7 +1,7 @@
 import { describe, expect, test } from "@jest/globals"
 import { Set } from "immutable"
 
-import {Skill, ComboTypes, SkillTypes} from "./main" 
+import {Skill, ComboTypes, SkillTypes} from "./skills" 
 
 const remakeName = 'NewSlash'
 const originalName = 'OldSlash'

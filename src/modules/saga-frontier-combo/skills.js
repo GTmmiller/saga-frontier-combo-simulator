@@ -1,4 +1,4 @@
-import { OrderedMap, Set } from 'immutable'
+// import { OrderedMap, Set } from 'immutable'
 
 export const ComboTypes = Object.freeze(
     {
