@@ -1,2 +1,2 @@
-export { Skill, ComboTypes, SkillTypes } from "./skills" 
-export { Combo } from "./combo"
+export { Skill, ComboTypes, SkillTypes } from "./saga-frontier-combo/skills" 
+export { Combo } from "./saga-frontier-combo/combo"

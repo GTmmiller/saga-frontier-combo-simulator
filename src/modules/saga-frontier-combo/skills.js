@@ -1,4 +1,4 @@
-// import { OrderedMap, Set } from 'immutable'
+import { Set } from 'immutable'
 
 export const ComboTypes = Object.freeze(
     {
@@ -59,7 +59,7 @@ export class Skill {
      * @returns True if the passed in skill will combo. False if it won't.
      */
     canSendCombo(nextSkill) {
-        return this.multiTarget === false && this.sends.intersect(nextSkill.recieves).count() > 0
+        return (this.multiTarget === false) && (this.sends.intersect(nextSkill.recieves).count() > 0)
     }
 
     /**
@@ -68,6 +68,8 @@ export class Skill {
      * @returns True if this skill would combo with the previous skill
      */
     canRecieveCombo(previousSkill) {
-        return previousSkill.multiTarget === false && this.recieves.intersect(previousSkill.sends).count() > 0
+        return (previousSkill.multiTarget === false) && (this.recieves.intersect(previousSkill.sends).count() > 0)
     }
 }
+
+export const PLACEHOLDER_SKILL = new Skill("No Skill Selected", "No Skill Selected", "PlaceHolder", Set(), Set(), false)

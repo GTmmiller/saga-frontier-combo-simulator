@@ -3,7 +3,7 @@ import { Combo } from "./combo"
 
 import { Set } from "immutable"
 
-import {Skill, ComboTypes, SkillTypes} from "./skills" 
+import {Skill, ComboTypes, SkillTypes, PLACEHOLDER_SKILL} from "./skills" 
 
 const remakeName = 'NewSlash'
 const originalName = 'OldSlash'
@@ -51,7 +51,7 @@ describe('Combo Class', () => {
     })
 
     // Make a placeholder skill
-    test.skip('Blank combo should have no combos', () => {
+    test('Blank combo should have no combos', () => {
         let combo = new Combo()
         expect(combo.getCombos()).toStrictEqual([])
     })
@@ -60,9 +60,6 @@ describe('Combo Class', () => {
         let combo = new Combo()
         combo.setSkill(0, newSkill)
         combo.setSkill(1, forwardSkill)
-        combo.setSkill(2, newSkill)
-        combo.setSkill(3, newSkill)
-        combo.setSkill(4, newSkill)
         expect(combo.getCombos()).toStrictEqual([
             {start: 0, end: 1}
         ])
@@ -74,7 +71,6 @@ describe('Combo Class', () => {
         combo.setSkill(1, forwardSkill)
         combo.setSkill(2, newSkill)
         combo.setSkill(3, forwardSkill)
-        combo.setSkill(4, newSkill)
         expect(combo.getCombos()).toStrictEqual(
             [
                 {start: 0, end: 1},

@@ -1,4 +1,4 @@
-
+import { PLACEHOLDER_SKILL } from "./skills"
 
 // TODO: future - Add a permutation function
 
@@ -19,7 +19,7 @@ export class Combo {
     constructor() {
         this.skillArray = new Array(5)
         for (let i = 0; i < this.skillArray.length; i++) {
-            this.skillArray[i] = null
+            this.skillArray[i] = PLACEHOLDER_SKILL
         }
     }
     // If I can extend array that would be nice -> too permissive
@@ -71,6 +71,10 @@ export class Combo {
     setSkill(index, skill) {
         // TODO: make safer
         this.skillArray[index] = skill
+    }
+
+    getSkill(index) {
+        return this.skillArray[index]
     }
 
 

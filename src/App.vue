@@ -62,29 +62,28 @@
           Snow
         </div>
       </div>
-
-      <footer class="footer">
-        <p>
-           Information presented in this tool was obtained from this document:
-          The information from that document is copyright x 2009
-        </p>
-        
-        <p>
-          Icons were grabbed from this sprite sheet: 
-        </p>
-
-        <p>
-          The SaGa series, SaGa frontier and SaGa Frontier remastered are all copywritten to Square Enix
-        </p>
-      </footer>
     </div>
+    <footer class="footer">
+      <p>
+          Information presented in this tool was obtained from this document:
+        The information from that document is copyright x 2009
+      </p>
+      
+      <p>
+        Icons were grabbed from this sprite sheet: 
+      </p>
+
+      <p>
+        The SaGa series, SaGa frontier and SaGa Frontier remastered are all copywritten to Square Enix
+      </p>
+    </footer>
 
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 
-import {Combo} from './combo/main'
+import {Combo} from './modules/saga-frontier-combo'
 
 export default {
   name: 'App',
