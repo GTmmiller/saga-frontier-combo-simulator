@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+credit to this person for the sprite sheet:
+https://www.spriters-resource.com/fullview/54217/
+
+Possible deep dive: why would this code fuck up Vue or V8:
+

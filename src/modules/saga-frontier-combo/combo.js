@@ -83,4 +83,8 @@ export class Combo {
         return this.skillArray
     }
 
+    getLength() {
+        return this.skillArray.length
+    }
+
 }

@@ -70,6 +70,11 @@ export class Skill {
     canRecieveCombo(previousSkill) {
         return (previousSkill.multiTarget === false) && (this.recieves.intersect(previousSkill.sends).count() > 0)
     }
+
+    static createSkillFromJson(jsonObject) {
+        // TODO: errors on bad json objects
+        return new Skill(jsonObject.newName, jsonObject.oldName, jsonObject)
+    }
 }
 
 export const PLACEHOLDER_SKILL = new Skill("No Skill Selected", "No Skill Selected", "PlaceHolder", Set(), Set(), false)
