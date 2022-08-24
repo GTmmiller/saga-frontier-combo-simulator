@@ -2,23 +2,24 @@ import { Set } from 'immutable'
 
 export const ComboTypes = Object.freeze(
     {
-        DEADSTOP: Symbol('Dead Stop'),
-        DOWN: Symbol('Down'),
-        INSTANTSTOP: Symbol('Instant Stop'),
-        MOVE: Symbol('Move'),
-        HOT: Symbol('Hot'),
-        COLD: Symbol('Cold'),
-        BLACKOUT: Symbol('Black Out'),
-        SNOW: Symbol('Snow')
+        "Dead Stop": Symbol('Dead Stop'),
+        "Down": Symbol('Down'),
+        "Instant Stop": Symbol('Instant Stop'),
+        "Move": Symbol('Move'),
+        "Hot": Symbol('Hot'),
+        "Cold": Symbol('Cold'),
+        "Black Out": Symbol('Black Out'),
+        "Snow": Symbol('Snow')
     }
 )
 
 
 export const SkillTypes = Object.freeze(
     {
-        SWORD: Symbol('Sword'),
-        KATANA: Symbol('Katana')
-    } 
+        Sword: Symbol('Sword'),
+        Katana: Symbol('Katana'),
+        Gun: Symbol('Gun')
+    }  
 )
 
 export class Skill {
@@ -71,9 +72,16 @@ export class Skill {
         return (previousSkill.multiTarget === false) && (this.recieves.intersect(previousSkill.sends).count() > 0)
     }
 
-    static createSkillFromJson(jsonObject) {
+    static fromJson(jsonObject) {
         // TODO: errors on bad json objects
-        return new Skill(jsonObject.newName, jsonObject.oldName, jsonObject)
+        return new Skill(
+            jsonObject.newName, 
+            jsonObject.oldName, 
+            SkillTypes[jsonObject.skillType],
+            Set(jsonObject.sends.map(type => ComboTypes[type])),
+            Set(jsonObject.recieves.map(type => ComboTypes[type])),
+            jsonObject.multiTarget
+        )
     }
 }
 

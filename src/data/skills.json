@@ -1,0 +1,40 @@
+{
+    "Sword": {
+        "StunSlash": {
+            "newName": "Knee Split",
+            "oldName": "StunSlash",
+            "skillType": "Sword",
+            "sends": ["Down", "Instant Stop"],
+            "recieves": ["Dead Stop"],
+            "multiTarget": false
+        },
+        "DoubleSlash": {
+            "newName": "Double Vertical",
+            "oldName": "DoubleSlash",
+            "skillType": "Sword",
+            "sends": [],
+            "recieves": ["Down", "Instant Stop"],
+            "multiTarget": false
+        }
+    },
+    "Katana": {
+        "MoonlightCut": {
+            "newName": "Surging Lunar Blade",
+            "oldName": "MoonlightCut",
+            "skillType": "Katana",
+            "sends": ["Dead Stop", "Cold", "Black Out"],
+            "recieves": ["Snow"],
+            "multiTarget": false
+        }
+    },
+    "Gun": {
+        "TotalShot": {
+            "newName": "Total Shot",
+            "oldName": "TotalShot",
+            "skillType": "Gun",
+            "sends": ["Instant Stop"],
+            "recieves": ["Down", "Cold"],
+            "multiTarget": true
+        }
+    }
+}

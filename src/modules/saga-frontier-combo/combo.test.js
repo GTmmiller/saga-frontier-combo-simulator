@@ -11,27 +11,27 @@ const originalName = 'OldSlash'
 const newSkill = new Skill(
     remakeName, 
     originalName, 
-    SkillTypes.KATANA, 
-    Set([ComboTypes.COLD]),
-    Set([ComboTypes.MOVE]),
+    SkillTypes.Katana, 
+    Set([ComboTypes.Cold]),
+    Set([ComboTypes.Move]),
     false
 )
 
 const forwardSkill = new Skill(
     'Forward',
     'Forward',
-    SkillTypes.KATANA,
-    Set([ComboTypes.COLD, ComboTypes.DEADSTOP]),
-    Set([ComboTypes.COLD]),
+    SkillTypes.Katana,
+    Set([ComboTypes.Cold, ComboTypes["Dead Stop"]]),
+    Set([ComboTypes.Cold]),
     false
 )
 
 const multiSkill = new Skill(
     'Multi',
     'Multi',
-    SkillTypes.KATANA,
-    Set([ComboTypes.COLD]),
-    Set([ComboTypes.COLD]),
+    SkillTypes.Katana,
+    Set([ComboTypes.Cold]),
+    Set([ComboTypes.Cold]),
     true
 )
 
