@@ -64,7 +64,7 @@ describe('Combo Class', () => {
         combo.setSkill(0, newSkill)
         combo.setSkill(1, forwardSkill)
         expect(combo.getCombos()).toStrictEqual([
-            {start: 0, end: 1}
+            {start: 0, end: 1, level: 2}
         ])
     })
 
@@ -75,8 +75,8 @@ describe('Combo Class', () => {
         combo.setSkill(3, forwardSkill)
         expect(combo.getCombos()).toStrictEqual(
             [
-                {start: 0, end: 1},
-                {start: 2, end: 3}
+                {start: 0, end: 1, level: 2},
+                {start: 2, end: 3, level: 2}
             ]
         )
     })
@@ -88,7 +88,7 @@ describe('Combo Class', () => {
         combo.setSkill(3, forwardSkill)
         combo.setSkill(4, multiSkill)
         expect(combo.getCombos()).toStrictEqual([
-            {start: 0, end: 4}
+            {start: 0, end: 4, level: 5}
         ])
     })
 

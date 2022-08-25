@@ -48,4 +48,38 @@ describe('Top-Level App', () => {
 
         expect(afterSplits).toHaveLength(6)
     })
+
+    test('Creating a level 2 combo shows a combo panel', async () => {
+        const dropDowns = screen.getAllByText("No Skill Selected")
+        const lunarBlades = screen.getAllByText("Surging Lunar Blade")
+        const kneeSplits = screen.getAllByText("Knee Split")
+
+        await fireEvent.click(dropDowns[0])
+        await fireEvent.click(lunarBlades[0])
+        await fireEvent.click(dropDowns[1])
+        await fireEvent.click(kneeSplits[1])
+
+        expect(screen.getByText("2")).toBeTruthy()
+    })
+
+    test('Creating multiple combos shows multiple panels', async() => {
+        const dropDowns = screen.getAllByText("No Skill Selected")
+        const lunarBlades = screen.getAllByText("Surging Lunar Blade")
+        const kneeSplits = screen.getAllByText("Knee Split")
+        const doubleVerts = screen.getAllByText("Double Vertical")
+
+        await fireEvent.click(dropDowns[0])
+        await fireEvent.click(lunarBlades[0])
+        await fireEvent.click(dropDowns[1])
+        await fireEvent.click(kneeSplits[1])
+        await fireEvent.click(dropDowns[2])
+        await(fireEvent.click(doubleVerts[2]))
+        await fireEvent.click(dropDowns[3])
+        await fireEvent.click(lunarBlades[3])
+        await fireEvent.click(dropDowns[4])
+        await fireEvent.click(kneeSplits[4])
+
+        expect(screen.getByText("2")).toBeTruthy()
+        expect(screen.getAllByText("3")).toHaveLength(2)
+    })
 })

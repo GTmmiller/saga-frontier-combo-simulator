@@ -4,14 +4,16 @@
     <div class="columns is-vcentered">
       
       <template v-for="(skill, index) in combo" :key="skill">
-        <div class="column">
+        <div class="column px-0">
           <SkillCard 
             :skill="skill" 
             :jsonSkills="jsonSkills"
             :comboIndex="index"
             @skillSelect="handleSkillSelect" />
         </div>
-        <div class="column is-narrow" v-if="index < comboLevels.length">
+        <div class="column is-narrow"
+          :class="{'px-0': comboLevels[index] > 1}"
+          v-if="index < comboLevels.length">
           <ComboCard :level="comboLevels[index]" />
         </div>
       </template>
@@ -130,19 +132,28 @@ export default {
   },
   data() {
     let combo = new Combo()
-    let comboLevels = new Array(combo.getLength() - 1)
-    
-    for (let i = 0; i < comboLevels.length; i++) {
-      comboLevels[i] = 0
-    }
-
     Object.freeze(jsonSkills)
 
     return {
       combo,
-      comboLevels,
       jsonSkills,
       skillObjects: {}
+    }
+  },
+  computed: {
+    comboLevels() {
+      let comboLevels = new Array(this.combo.getLength() - 1)
+      for (let i = 0; i < comboLevels.length; i++) {
+        comboLevels[i] = 0
+      }
+      const comboRanges = this.combo.getCombos()
+
+      for (const comboRange of comboRanges) {
+        for(let i = comboRange.start; i < comboRange.end; i++) {
+          comboLevels[i] = comboRange.level
+        }
+      }
+      return comboLevels
     }
   },
   methods: {

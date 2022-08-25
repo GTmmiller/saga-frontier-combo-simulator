@@ -52,10 +52,11 @@ export class Combo {
 
             if (canCombo && currentCombo === null) {
                 // A combo is created if it does not exist yet
-                currentCombo = { start: i, end: null }
+                currentCombo = { start: i, end: null, level: null }
             } else if (!canCombo && currentCombo !== null) {
                 // A combo is stopped
                 currentCombo.end = i
+                currentCombo.level = currentCombo.end - currentCombo.start + 1
                 combos.push(currentCombo)
                 currentCombo = null
             }
@@ -63,6 +64,7 @@ export class Combo {
 
         if (currentCombo !== null) {
             currentCombo.end = this.skillArray.length - 1
+            currentCombo.level = currentCombo.end - currentCombo.start + 1
             combos.push(currentCombo)
             currentCombo = null
         }
