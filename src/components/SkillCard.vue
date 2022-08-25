@@ -18,8 +18,11 @@
             {{skillType}}
           </div>
           <hr class="dropdown-divider"/>
-          <a class="dropdown-item" v-for="(skill, skillKey) in skills" :key="skillKey">
-            {{skill.newName}}
+          <a class="dropdown-item"
+            v-for="(menuSkill, skillKey) in skills" :key="skillKey"
+            :class="{'is-active': skill.oldName === menuSkill.oldName}"
+            @click="selectSkill(createSkillKey(menuSkill))">
+            {{menuSkill.newName}}
           </a>
           <hr class="dropdown-divider" v-if="index < Object.keys(jsonSkills).length - 1"/>
         </template>
@@ -47,9 +50,30 @@ export default {
     jsonSkills: {
       type: Object,
       required: true
+    },
+    comboIndex: {
+      type: Number,
+      required: true
     }
   },
   computed: {
+  },
+  emits: {
+    skillSelect: (payload) => {
+      if ((payload.index === 0 || payload.index) && payload.skillKey) {
+        return true
+      } else {
+        return false
+      }
+    }
+  },
+  methods: {
+    selectSkill(skillKey) {
+      this.$emit('skillSelect', {index: this.comboIndex, skillKey})
+    },
+    createSkillKey(skill) {
+      return "".concat(skill.skillType, "_", skill.oldName)
+    }
   }
 }
 </script>

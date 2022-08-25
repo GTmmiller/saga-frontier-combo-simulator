@@ -24,7 +24,7 @@ describe('Top-Level App', () => {
     test.skip('Clicking a skill drop down produces a menu', async () => {
         const dropDowns = screen.getAllByText("No Skill Selected")
         
-        fireEvent.click(dropDowns[0])
+        await fireEvent.click(dropDowns[0])
 
         const swords = screen.getAllByText("Sword")
         const kneeSplits = screen.getAllByText("Knee Split")
@@ -33,5 +33,19 @@ describe('Top-Level App', () => {
         expect(kneeSplits[0]).toBeVisible()
         expect(swords[1]).not.toBeVisible()
         expect(kneeSplits[1]).not.toBeVisible()
+    })
+
+    test('Clicking a skill in the dropdown changes the option', async () => {
+        const dropDowns = screen.getAllByText("No Skill Selected")
+
+        await fireEvent.click(dropDowns[0])
+
+        const kneeSplits = screen.getAllByText("Knee Split")
+
+        await fireEvent.click(kneeSplits[0])
+
+        const afterSplits = screen.getAllByText("Knee Split")
+
+        expect(afterSplits).toHaveLength(6)
     })
 })

@@ -5,13 +5,17 @@
       
       <template v-for="(skill, index) in combo" :key="skill">
         <div class="column">
-          <SkillCard :skill="skill" :jsonSkills="jsonSkills" />
+          <SkillCard 
+            :skill="skill" 
+            :jsonSkills="jsonSkills"
+            :comboIndex="index"
+            @skillSelect="handleSkillSelect" />
         </div>
         <div class="column is-narrow" v-if="index < comboLevels.length">
           <ComboCard :level="comboLevels[index]" />
         </div>
       </template>
-      
+
     </div>
   </div>
 
@@ -111,7 +115,7 @@
 </template>
 
 <script>
-import {Combo} from './modules/saga-frontier-combo'
+import {Combo, Skill} from './modules/saga-frontier-combo'
 
 import SkillCard from './components/SkillCard.vue'
 import ComboCard from './components/ComboCard.vue'
@@ -134,14 +138,24 @@ export default {
 
     Object.freeze(jsonSkills)
 
-
-    
     return {
       combo,
       comboLevels,
-      jsonSkills
+      jsonSkills,
+      skillObjects: {}
     }
   },
+  methods: {
+    handleSkillSelect(payload) {
+      if(!Object.keys(this.skillObjects).includes(payload.skillKey)) {
+        // Create new Skill object from json data
+        const[skillType, oldName] = payload.skillKey.split("_")
+        this.skillObjects[payload.skillKey] = Skill.fromJson(this.jsonSkills[skillType][oldName])
+      }
+      const selectedSkill = this.skillObjects[payload.skillKey]
+      this.combo.setSkill(payload.index, selectedSkill)
+    }
+  }
 }
 </script>
 
