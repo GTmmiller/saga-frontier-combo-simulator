@@ -1,4 +1,4 @@
-import { describe, expect, test } from "@jest/globals"
+import { describe, expect, test, beforeEach } from "@jest/globals"
 import { Combo } from "./combo"
 
 import { Set } from "immutable"
@@ -35,13 +35,18 @@ const multiSkill = new Skill(
     true
 )
 
+let combo = null;
+
 describe('Combo Class', () => {
+    beforeEach( () => {
+        combo = new Combo()
+    })
+
     test('Combos can be constructed', () => {
-        expect(new Combo()).toBeTruthy()
+        expect(combo).toBeTruthy()
     })
 
     test('No possible combos makes blank array', () => {
-        let combo = new Combo()
         combo.setSkill(0, newSkill)
         combo.setSkill(1, newSkill)
         combo.setSkill(2, newSkill)
@@ -52,12 +57,10 @@ describe('Combo Class', () => {
 
     // Make a placeholder skill
     test('Blank combo should have no combos', () => {
-        let combo = new Combo()
         expect(combo.getCombos()).toStrictEqual([])
     })
 
     test('Should detect a small combo', () => {
-        let combo = new Combo()
         combo.setSkill(0, newSkill)
         combo.setSkill(1, forwardSkill)
         expect(combo.getCombos()).toStrictEqual([
@@ -66,7 +69,6 @@ describe('Combo Class', () => {
     })
 
     test('Should detect multiple combos', () => {
-        let combo = new Combo()
         combo.setSkill(0, newSkill)
         combo.setSkill(1, forwardSkill)
         combo.setSkill(2, newSkill)
@@ -80,7 +82,6 @@ describe('Combo Class', () => {
     })
 
     test('Should detect a continuous combo', () => {
-        let combo = new Combo()
         combo.setSkill(0, forwardSkill)
         combo.setSkill(1, forwardSkill)
         combo.setSkill(2, forwardSkill)
@@ -89,6 +90,15 @@ describe('Combo Class', () => {
         expect(combo.getCombos()).toStrictEqual([
             {start: 0, end: 4}
         ])
+    })
+
+    test('can iterate using iterator', () => {
+        let count = 0
+        for(const skill of combo) {
+            expect(skill).toEqual(PLACEHOLDER_SKILL)
+            count += 1
+        }
+        expect(count).toEqual(combo.getLength())
     })
     
 })

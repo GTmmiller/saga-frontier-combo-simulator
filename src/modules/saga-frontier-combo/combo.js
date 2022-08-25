@@ -11,6 +11,8 @@ import { PLACEHOLDER_SKILL } from "./skills"
 
 // TODO: make a placeholder skill
 
+// TODO: make iterable
+
 
 // [1] -> [2] -> [3] -> etc
 
@@ -77,14 +79,12 @@ export class Combo {
         return this.skillArray[index]
     }
 
-
-    getSkillArray() {
-        // TODO: maybe send a copy instead?
-        return this.skillArray
-    }
-
     getLength() {
         return this.skillArray.length
+    }
+
+    [Symbol.iterator] () {
+        return this.skillArray[Symbol.iterator]()
     }
 
 }

@@ -1,16 +1,17 @@
 <template>
   <div class="container">
     <h1>Combo Simulator</h1>
-    <div class="columns is-gapless is-vcentered">
-      <div class="column"
-        :class="{'is-1': typeof skillOrCombo === 'number'}" 
-        v-for="skillOrCombo in skillComboList" 
-        :key="skillOrCombo">
-
-        <ComboCard :level="skillOrCombo" v-if="typeof skillOrCombo === 'number'" />
-        <SkillCard :skill="skillOrCombo" v-else />
-
-      </div>
+    <div class="columns is-vcentered">
+      
+      <template v-for="(skill, index) in combo" :key="skill">
+        <div class="column">
+          <SkillCard :skill="skill" :jsonSkills="jsonSkills" />
+        </div>
+        <div class="column is-narrow" v-if="index < comboLevels.length">
+          <ComboCard :level="comboLevels[index]" />
+        </div>
+      </template>
+      
     </div>
   </div>
 
@@ -115,6 +116,8 @@ import {Combo} from './modules/saga-frontier-combo'
 import SkillCard from './components/SkillCard.vue'
 import ComboCard from './components/ComboCard.vue'
 
+import jsonSkills from './data/skills.json'
+
 export default {
   name: 'App',
   components: {
@@ -128,26 +131,17 @@ export default {
     for (let i = 0; i < comboLevels.length; i++) {
       comboLevels[i] = 0
     }
+
+    Object.freeze(jsonSkills)
+
+
     
     return {
       combo,
-      comboLevels
+      comboLevels,
+      jsonSkills
     }
   },
-  computed: {
-    skillComboList() {
-      let skillComboList = []
-      
-      for(let i = 0; i < this.combo.getLength(); i++) {
-        skillComboList.push(this.combo.getSkill(i))
-        if(i < this.comboLevels.length) {
-          skillComboList.push(this.comboLevels[i])
-        }
-      }
-      
-      return skillComboList
-    }
-  }
 }
 </script>
 
