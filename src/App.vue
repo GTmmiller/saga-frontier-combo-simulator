@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <h1>Combo Simulator</h1>
+    <h1 class="title">Combo Simulator</h1>
     <div class="columns is-vcentered">
       
-      <template v-for="(skill, index) in combo" :key="skill">
+      <template v-for="(skill, index) in combo" :key="index">
         <div class="column px-0">
           <SkillCard 
             :skill="skill" 

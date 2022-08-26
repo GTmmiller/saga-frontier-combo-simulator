@@ -27,7 +27,7 @@ describe('Top-Level App', () => {
         await fireEvent.click(dropDowns[0])
 
         const swords = screen.getAllByText("Sword")
-        const kneeSplits = screen.getAllByText("Knee Split")
+        const kneeSplits = screen.getAllByText("StunSlash")
 
         expect(swords[0]).toBeVisible()
         expect(kneeSplits[0]).toBeVisible()
@@ -40,19 +40,19 @@ describe('Top-Level App', () => {
 
         await fireEvent.click(dropDowns[0])
 
-        const kneeSplits = screen.getAllByText("Knee Split")
+        const kneeSplits = screen.getAllByText("StunSlash")
 
         await fireEvent.click(kneeSplits[0])
 
-        const afterSplits = screen.getAllByText("Knee Split")
+        const afterSplits = screen.getAllByText("StunSlash")
 
         expect(afterSplits).toHaveLength(6)
     })
 
     test('Creating a level 2 combo shows a combo panel', async () => {
         const dropDowns = screen.getAllByText("No Skill Selected")
-        const lunarBlades = screen.getAllByText("Surging Lunar Blade")
-        const kneeSplits = screen.getAllByText("Knee Split")
+        const lunarBlades = screen.getAllByText("MoonlightCut")
+        const kneeSplits = screen.getAllByText("StunSlash")
 
         await fireEvent.click(dropDowns[0])
         await fireEvent.click(lunarBlades[0])
@@ -64,16 +64,16 @@ describe('Top-Level App', () => {
 
     test('Creating multiple combos shows multiple panels', async() => {
         const dropDowns = screen.getAllByText("No Skill Selected")
-        const lunarBlades = screen.getAllByText("Surging Lunar Blade")
-        const kneeSplits = screen.getAllByText("Knee Split")
-        const doubleVerts = screen.getAllByText("Double Vertical")
+        const lunarBlades = screen.getAllByText("MoonlightCut")
+        const kneeSplits = screen.getAllByText("StunSlash")
+        const doubleVerts = screen.getAllByText("DoubleSlash")
 
         await fireEvent.click(dropDowns[0])
         await fireEvent.click(lunarBlades[0])
         await fireEvent.click(dropDowns[1])
         await fireEvent.click(kneeSplits[1])
         await fireEvent.click(dropDowns[2])
-        await(fireEvent.click(doubleVerts[2]))
+        await fireEvent.click(doubleVerts[2])
         await fireEvent.click(dropDowns[3])
         await fireEvent.click(lunarBlades[3])
         await fireEvent.click(dropDowns[4])

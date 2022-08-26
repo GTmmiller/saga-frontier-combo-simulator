@@ -67,7 +67,7 @@ describe('Skill Class', () => {
         expect(jsonSkill.newName).toBe("Knee Split")
         expect(jsonSkill.skillType).toBe(SkillTypes.Sword)
         expect(jsonSkill.sends).toStrictEqual(Set([ComboTypes.Down, ComboTypes["Instant Stop"]]))
-        expect(jsonSkill.recieves).toStrictEqual(Set([ComboTypes["Dead Stop"]]))
+        expect(jsonSkill.recieves).toStrictEqual(Set([ComboTypes["Dead Stop"], ComboTypes.Move]))
         expect(jsonSkill.multiTarget).toBeFalsy()
     })
 })

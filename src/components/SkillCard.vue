@@ -4,7 +4,7 @@
       :class="{'is-active': dropDownActive}">
       <div class="dropdown-trigger">
         <button class="button" @click="dropDownActive = !dropDownActive">
-          <span>{{skill.newName}}</span>
+          <span>{{skill.oldName}}</span>
           <span class="icon is-small">
             <i class="fas fa-angle-down"></i>
           </span>
@@ -12,20 +12,14 @@
       </div>
       <div class="dropdown-menu"
         :class="{'is-hidden': !dropDownActive}">
-        <div class="dropdown-content">
-        <template v-for="(skills, skillType, index) in jsonSkills" :key="skillType">
-          <div class="dropdown-item has-text-weight-bold">
-            {{skillType}}
-          </div>
-          <hr class="dropdown-divider"/>
-          <a class="dropdown-item"
-            v-for="(menuSkill, skillKey) in skills" :key="skillKey"
-            :class="{'is-active': skill.oldName === menuSkill.oldName}"
-            @click="selectSkill(createSkillKey(menuSkill))">
-            {{menuSkill.newName}}
-          </a>
-          <hr class="dropdown-divider" v-if="index < Object.keys(jsonSkills).length - 1"/>
-        </template>
+        <div class="dropdown-content scroll-content">
+        <SkillGroup
+          v-for="(skills, skillType, index) in jsonSkills" :key="skillType" 
+          :selectedSkill="skill"
+          :skillType="skillType"
+          :skills="skills"
+          :drawDivider="index < Object.keys(jsonSkills).length - 1" 
+          @skillSelect="handleSkillSelect" />
         </div>
       </div>
     </div>
@@ -35,8 +29,13 @@
 <script>
 import {Skill} from '../modules/saga-frontier-combo'
 
+import SkillGroup from './skill-card/SkillGroup.vue'
+
 export default {
   name: 'SkillCard',
+  components: {
+    SkillGroup
+  },
   data() {
     return {
       dropDownActive: false
@@ -68,15 +67,23 @@ export default {
     }
   },
   methods: {
-    selectSkill(skillKey) {
-      this.$emit('skillSelect', {index: this.comboIndex, skillKey})
-    },
-    createSkillKey(skill) {
-      return "".concat(skill.skillType, "_", skill.oldName)
+    handleSkillSelect(event) {
+      event.index = this.comboIndex
+      this.$emit('skillSelect', event)
     }
+  //   selectSkill(skillKey) {
+  //     this.$emit('skillSelect', {index: this.comboIndex, skillKey})
+  //   },
+  //   createSkillKey(skill) {
+  //     return "".concat(skill.skillType, "_", skill.oldName)
+  //   }
   }
 }
 </script>
 
 <style scoped>
+  .scroll-content {
+    max-height: 20em;
+    overflow: auto;
+  }
 </style>

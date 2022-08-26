@@ -1,40 +1,4255 @@
 {
     "Sword": {
-        "StunSlash": {
-            "newName": "Knee Split",
-            "oldName": "StunSlash",
-            "skillType": "Sword",
-            "sends": ["Down", "Instant Stop"],
-            "recieves": ["Dead Stop"],
-            "multiTarget": false
-        },
-        "DoubleSlash": {
-            "newName": "Double Vertical",
-            "oldName": "DoubleSlash",
-            "skillType": "Sword",
-            "sends": [],
-            "recieves": ["Down", "Instant Stop"],
-            "multiTarget": false
-        }
+      "StunSlash": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "StunSlash",
+        "newName": "Knee Split",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "DoubleSlash": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "DoubleSlash",
+        "sends": [],
+        "recieves": [
+          "Down",
+          "Hot"
+        ]
+      },
+      "HardSlash": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "HardSlash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "Thrust": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "Thrust",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "CrossSlash": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "CrossSlash",
+        "sends": [],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "Smash": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "Smash",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "SwallowSwing": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "SwallowSwing",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "ThunderThrust": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "ThunderThrust",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Heaven/Hell": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "Heaven/Hell",
+        "sends": [],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "WheelSlash": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "WheelSlash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "WillowBranch": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "WillowBranch",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Deflect": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "Deflect",
+        "sends": [],
+        "recieves": []
+      },
+      "BearCrush": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "BearCrush",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "DeadEnd": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "DeadEnd",
+        "sends": [],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "HeadWind": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "HeadWind",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "TripleThrust": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "TripleThrust",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Kasumi": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "Kasumi",
+        "sends": [],
+        "recieves": []
+      },
+      "NoMoment": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "NoMoment",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "GaleSlash": {
+        "skillType": "Sword",
+        "multiTarget": true,
+        "oldName": "GaleSlash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "2GaleSlash": {
+        "skillType": "Sword",
+        "multiTarget": true,
+        "oldName": "2GaleSlash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "StillStream": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "StillStream",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "TurbidCurrent": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "TurbidCurrent",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "CrossDeflect": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "CrossDeflect",
+        "sends": [],
+        "recieves": []
+      },
+      "RisingNova": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "RisingNova",
+        "sends": [
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "RosarioImpale": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "RosarioImpale",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "Haze-to-Wheel": {
+        "skillType": "Sword",
+        "multiTarget": true,
+        "oldName": "Haze-to-Wheel",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "LifeSprinkler": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "LifeSprinkler",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Godless": {
+        "skillType": "Sword",
+        "multiTarget": false,
+        "oldName": "Godless",
+        "sends": [],
+        "recieves": []
+      }
     },
     "Katana": {
-        "MoonlightCut": {
-            "newName": "Surging Lunar Blade",
-            "oldName": "MoonlightCut",
-            "skillType": "Katana",
-            "sends": ["Dead Stop", "Cold", "Black Out"],
-            "recieves": ["Snow"],
-            "multiTarget": false
-        }
+      "MoonlightCut": {
+        "skillType": "Katana",
+        "multiTarget": false,
+        "oldName": "MoonlightCut",
+        "sends": [
+          "Dead Stop",
+          "Cold",
+          "Black Out"
+        ],
+        "recieves": [
+          "Snow"
+        ]
+      },
+      "ShadowCounter": {
+        "skillType": "Katana",
+        "multiTarget": false,
+        "oldName": "ShadowCounter",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "Blizzard": {
+        "skillType": "Katana",
+        "multiTarget": false,
+        "oldName": "Blizzard",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Hot",
+          "Snow"
+        ],
+        "recieves": []
+      },
+      "Tres Flores": {
+        "skillType": "Katana",
+        "multiTarget": false,
+        "oldName": "Tres Flores",
+        "sends": [],
+        "recieves": [
+          "Black Out"
+        ]
+      }
     },
     "Gun": {
-        "TotalShot": {
-            "newName": "Total Shot",
-            "oldName": "TotalShot",
-            "skillType": "Gun",
-            "sends": ["Instant Stop"],
-            "recieves": ["Down", "Cold"],
-            "multiTarget": true
-        }
+      "SharpShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "SharpShot",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "FocusShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "FocusShot",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "TotalShot": {
+        "skillType": "Gun",
+        "multiTarget": true,
+        "oldName": "TotalShot",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "TrickShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "TrickShot",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "ReactionShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "ReactionShot",
+        "sends": [],
+        "recieves": []
+      },
+      "StunShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "StunShot",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": []
+      },
+      "CrossShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "CrossShot",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "BoundShot": {
+        "skillType": "Gun",
+        "multiTarget": false,
+        "oldName": "BoundShot",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      }
+    },
+    "Martial Arts": {
+      "Kick": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Kick",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move"
+        ]
+      },
+      "AirThrow": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "AirThrow",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Chop": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Chop",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Sliding": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Sliding",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop"
+        ]
+      },
+      "RollingCradle": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "RollingCradle",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Cold"
+        ]
+      },
+      "SwayBack": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "SwayBack",
+        "sends": [],
+        "recieves": []
+      },
+      "Fist": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Fist",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "BackFist": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "BackFist",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "CrushBeat": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "CrushBeat",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "RotationKick": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "RotationKick",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "KO Throw": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "KO Throw",
+        "sends": [],
+        "recieves": []
+      },
+      "Suplex": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Suplex",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "GiantSwing": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "GiantSwing",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "GoldHand": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "GoldHand",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move"
+        ]
+      },
+      "BabelCrumble": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "BabelCrumble",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "TriangleKick": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "TriangleKick",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "OgreRun": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "OgreRun",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Scuffle": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Scuffle",
+        "sends": [],
+        "recieves": [
+          "Instant Stop"
+        ]
+      },
+      "LocomotionG": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "LocomotionG",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "DragonTurn": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "DragonTurn",
+        "sends": [],
+        "recieves": []
+      },
+      "Lastshot": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Lastshot",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Corkscrew": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "Corkscrew",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "SkyTwister": {
+        "skillType": "Martial Arts",
+        "multiTarget": false,
+        "oldName": "SkyTwister",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      }
+    },
+    "Alkaiser": {
+      "RaySword": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "RaySword",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "KaiserWing": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "KaiserWing",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "KaiserSmash": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "KaiserSmash",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "BrightFist": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "BrightFist",
+        "sends": [
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "SparklingRoll": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "SparklingRoll",
+        "sends": [
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "FlashTurn": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "FlashTurn",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "Al-Blaster": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "Al-Blaster",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "Al-Phoenix": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "Al-Phoenix",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "Re-Al-Phoenix": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "Re-Al-Phoenix",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "ShiningKick": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "ShiningKick",
+        "sends": [
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "DeflectLance": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "DeflectLance",
+        "sends": [
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "FinalCrusade": {
+        "skillType": "Alkaiser",
+        "multiTarget": false,
+        "oldName": "FinalCrusade",
+        "sends": [],
+        "recieves": []
+      }
+    },
+    "Item-Inherent": {
+      "ShadowHold": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "ShadowHold",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "SilverFang": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "SilverFang",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": []
+      },
+      "Kusanagi": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "Kusanagi",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "Asura": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "Asura",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move"
+        ]
+      },
+      "*PurpleEye*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*PurpleEye*",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Cockatrice": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "Cockatrice",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "*SeaStone*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*SeaStone*",
+        "sends": [
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "SacredSong": {
+        "skillType": "Item-Inherent",
+        "multiTarget": true,
+        "oldName": "SacredSong",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "*Magihat*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*Magihat*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "TwinSword": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "TwinSword",
+        "sends": [],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "IronclogShot": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "IronclogShot",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop"
+        ]
+      },
+      "FinalStrike": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "FinalStrike",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Cold",
+          "Black Out",
+          "Snow"
+        ],
+        "recieves": []
+      },
+      "ElementDissolve": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "ElementDissolve",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "MillionDollers": {
+        "skillType": "Item-Inherent",
+        "multiTarget": true,
+        "oldName": "MillionDollers",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "Maelstrom": {
+        "skillType": "Item-Inherent",
+        "multiTarget": true,
+        "oldName": "Maelstrom",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Hot"
+        ]
+      },
+      "*CharmNecklace*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*CharmNecklace*",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "DirtyFang": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "DirtyFang",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "*SandVessel*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*SandVessel*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "*DurahanShield*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*DurahanShield*",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "*DanceShoes*": {
+        "skillType": "Item-Inherent",
+        "multiTarget": false,
+        "oldName": "*DanceShoes*",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      }
+    },
+    "Heavy Weapons": {
+      "FlameThrower": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "FlameThrower",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "GhostCannon": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "GhostCannon",
+        "sends": [
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot"
+        ]
+      },
+      "WaterCannon": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "WaterCannon",
+        "sends": [
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "*SonicCannon*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "*SonicCannon*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "*DOBBYBazooka*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": true,
+        "oldName": "*DOBBYBazooka*",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "*Thunderbolt*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "*Thunderbolt*",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "*LightningCannon*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "*LightningCannon*",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "*BoltThrower*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "*BoltThrower*",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "*BeamCannon*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "*BeamCannon*",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "DestructionBeam": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "DestructionBeam",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Paralyzer": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "Paralyzer",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Vulcan": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "Vulcan",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Blaster": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "Blaster",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "BlasterSword": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "BlasterSword",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot"
+        ]
+      },
+      "PlasmaBullet": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "PlasmaBullet",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Missile": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "Missile",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "*HyperionBazooka*": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "*HyperionBazooka*",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Instant Stop"
+        ]
+      },
+      "HE-Rocket": {
+        "skillType": "Heavy Weapons",
+        "multiTarget": false,
+        "oldName": "HE-Rocket",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      }
+    },
+    "Mec Parts": {
+      "MachineVulcan": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "MachineVulcan",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "Graviton": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "Graviton",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "CosmicRave": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "CosmicRave",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "StarlightShower": {
+        "skillType": "Mec Parts",
+        "multiTarget": true,
+        "oldName": "StarlightShower",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": []
+      },
+      "BeamSword": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "BeamSword",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move"
+        ]
+      },
+      "Hammer": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "Hammer",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "MicroMissile": {
+        "skillType": "Mec Parts",
+        "multiTarget": true,
+        "oldName": "MicroMissile",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": []
+      },
+      "Laser": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "Laser",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "RailCannon": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "RailCannon",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "AT Missile": {
+        "skillType": "Mec Parts",
+        "multiTarget": false,
+        "oldName": "AT Missile",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      }
+    },
+    "Mec Programs": {
+      "KAMIKAZE Crush": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "KAMIKAZE\n  Crush",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "HypnoFlash": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "HypnoFlash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Jammer": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "Jammer",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "CrossHair": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "CrossHair",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Shoot ALL": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "Shoot ALL",
+        "sends": [],
+        "recieves": []
+      },
+      "PluralSlash": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "PluralSlash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "Pop-Knight": {
+        "skillType": "Mec Programs",
+        "multiTarget": true,
+        "oldName": "Pop-Knight",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "RangeFire": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "RangeFire",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "HammerCrush": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "HammerCrush",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "Shock Soldier": {
+        "skillType": "Mec Programs",
+        "multiTarget": true,
+        "oldName": "Shock Soldier",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Magnify": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "Magnify",
+        "sends": [],
+        "recieves": []
+      },
+      "MecSonata": {
+        "skillType": "Mec Programs",
+        "multiTarget": true,
+        "oldName": "MecSonata",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Black Out"
+        ]
+      },
+      "TigerRampage": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "TigerRampage",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "Maelstrom": {
+        "skillType": "Mec Programs",
+        "multiTarget": true,
+        "oldName": "Maelstrom",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Hot"
+        ]
+      },
+      "LogicBomb": {
+        "skillType": "Mec Programs",
+        "multiTarget": false,
+        "oldName": "LogicBomb",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      }
+    },
+    "Monster (Head)": {
+      "Fang": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "Fang",
+        "sends": [],
+        "recieves": []
+      },
+      "BloodSucker": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "BloodSucker",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Beak": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "Beak",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop"
+        ]
+      },
+      "Hypnotism": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "Hypnotism",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "DeathGaze": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "DeathGaze",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "StoneGaze": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "StoneGaze",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Petrify": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "Petrify",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Cold"
+        ]
+      },
+      "DaggerJaw": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "DaggerJaw",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Cold"
+        ]
+      },
+      "Horn": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "Horn",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move"
+        ]
+      },
+      "FangCrush": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "FangCrush",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "StunGaze": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "StunGaze",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Grasp": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "Grasp",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "CharmGaze": {
+        "skillType": "Monster (Head)",
+        "multiTarget": false,
+        "oldName": "CharmGaze",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      }
+    },
+    "Monster (Arm)": {
+      "IceSmash": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "IceSmash",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "MadAttack": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "MadAttack",
+        "sends": [
+          "Hot"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "PowerBeat": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "PowerBeat",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Kusanagi": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Kusanagi",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "GroundHit": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "GroundHit",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "GhostTouch": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "GhostTouch",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Move"
+        ]
+      },
+      "Chop": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Chop",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move"
+        ]
+      },
+      "Feeler": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Feeler",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "TitasWave": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "TitasWave",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Beat": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Beat",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "DoubleAxe": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "DoubleAxe",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "Thrust": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Thrust",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "Claw": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Claw",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "DeathTouch": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "DeathTouch",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "PoisonGrip": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "PoisonGrip",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "Psychout": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Psychout",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Scissors": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Scissors",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "StunTouch": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "StunTouch",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "HeatSmash": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "HeatSmash",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "BoomerangHook": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "BoomerangHook",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      },
+      "BrainCrush": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "BrainCrush",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Blade": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": false,
+        "oldName": "Blade",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot"
+        ]
+      },
+      "GaleAttack": {
+        "skillType": "Monster (Arm)",
+        "multiTarget": true,
+        "oldName": "GaleAttack",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      }
+    },
+    "Monster (Leg)": {
+      "Sweep": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "Sweep",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Kick": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "Kick",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "GriffithScratch": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "GriffithScratch",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Tail": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "Tail",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Stinger": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "Stinger",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Hot"
+        ]
+      },
+      "PoisonNeedle": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "PoisonNeedle",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Hot"
+        ]
+      },
+      "TailHit": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "TailHit",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Feint": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "Feint",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "CentipedeCrush": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "CentipedeCrush",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Hot",
+          "Cold"
+        ]
+      }
+    },
+    "Monster (Body)": {
+      "GliderSpike": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "GliderSpike",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "SeedVulcan": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "SeedVulcan",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move"
+        ]
+      },
+      "Oscillation": {
+        "skillType": "Monster (Body)",
+        "multiTarget": true,
+        "oldName": "Oscillation",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Tackle": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Tackle",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Cold"
+        ]
+      },
+      "Wing": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Wing",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Dash": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Dash",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "Needles": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Needles",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "Headbutt": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Headbutt",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Cold"
+        ]
+      },
+      "Spore": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Spore",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot"
+        ]
+      },
+      "Stampede": {
+        "skillType": "Monster (Body)",
+        "multiTarget": true,
+        "oldName": "Stampede",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "FireKiss": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "FireKiss",
+        "sends": [
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Cold"
+        ]
+      },
+      "Coils": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Coils",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "MinionStrike": {
+        "skillType": "Monster (Body)",
+        "multiTarget": true,
+        "oldName": "MinionStrike",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "Solvent ": {
+        "skillType": "Monster (Body)",
+        "multiTarget": false,
+        "oldName": "Solvent ",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      }
+    },
+    "Monster (Breath)": {
+      "StinkGas": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "StinkGas",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "FireBreath": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "FireBreath",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "AcidBreath": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "AcidBreath",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "GasFlame": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "GasFlame",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "DeadlyMoss": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "DeadlyMoss",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Black Out"
+        ]
+      },
+      "WaterCannon": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "WaterCannon",
+        "sends": [
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "SleepGas": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "SleepGas",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "SphinxRiddle": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "SphinxRiddle",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Ink": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "Ink",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "StoneGas": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "StoneGas",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "BoltBreath": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "BoltBreath",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "PoisonGun": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "PoisonGun",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "PoisonGas": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "PoisonGas",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "TripGas": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "TripGas",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "BeetleJuice": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "BeetleJuice",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "FlameBlast": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "FlameBlast",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "BoltBlast": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "BoltBlast",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "ArcticBreath": {
+        "skillType": "Monster (Breath)",
+        "multiTarget": false,
+        "oldName": "ArcticBreath",
+        "sends": [
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Hot"
+        ]
+      }
+    },
+    "Monster (Magical)": {
+      "Ignis": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "Ignis",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "IllStorm": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "IllStorm",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Ectoplasnet": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Ectoplasnet",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "ElfShot": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "ElfShot",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "Rock": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Rock",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Windblast": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "Windblast",
+        "sends": [
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move"
+        ]
+      },
+      "GremlinTouch": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "GremlinTouch",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "Siren": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "Siren",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "SadSong": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "SadSong",
+        "sends": [
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": []
+      },
+      "MagneticStorm": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "MagneticStorm",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Quake": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "Quake",
+        "sends": [],
+        "recieves": [
+          "Instant Stop",
+          "Cold"
+        ]
+      },
+      "Tremor": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "Tremor",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "Silf": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Silf",
+        "sends": [
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Scream": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Scream",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "SpiderNet": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "SpiderNet",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Spoil": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Spoil",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "SacredSong": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "SacredSong",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "HPDrain": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "HPDrain",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "Flash": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Flash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Tornado": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Tornado",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "Supersonic": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Supersonic",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "PoisonMist": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "PoisonMist",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "BattleSong": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "BattleSong",
+        "sends": [
+          "Hot"
+        ],
+        "recieves": []
+      },
+      "HeatWave": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "HeatWave",
+        "sends": [
+          "Move",
+          "Hot"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Cold"
+        ]
+      },
+      "Pheremone": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Pheremone",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "BladeNet": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "BladeNet",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "PainPowder": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "PainPowder",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "MightyCyclone": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "MightyCyclone",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Maelstrom": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "Maelstrom",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Hot"
+        ]
+      },
+      "Seduction": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Seduction",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "LightBall": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": true,
+        "oldName": "LightBall",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Thunderbolt": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Thunderbolt",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Lullaby": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "Lullaby",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "QuickSand": {
+        "skillType": "Monster (Magical)",
+        "multiTarget": false,
+        "oldName": "QuickSand",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      }
+    },
+    "Mystic Sword": {
+      "Needle": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "Needle",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move"
+        ]
+      },
+      "Lance": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "Lance",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move"
+        ]
+      },
+      "BloodSucker": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "BloodSucker",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Blade": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "Blade",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot"
+        ]
+      },
+      "GremlinEffect": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "GremlinEffect",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "Hypnotism": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "Hypnotism",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "FireBreath": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "FireBreath",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "Oscillation": {
+        "skillType": "Mystic Sword",
+        "multiTarget": true,
+        "oldName": "Oscillation",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "PsyNet": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "PsyNet",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "HeatSmash": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "HeatSmash",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "GriffithScratch": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "GriffithScratch",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Flash": {
+        "skillType": "Mystic Sword",
+        "multiTarget": false,
+        "oldName": "Flash",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      }
+    },
+    "Mystic Glove": {
+      "WaterCannon": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "WaterCannon",
+        "sends": [
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "DeadlyPowder": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "DeadlyPowder",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot"
+        ]
+      },
+      "Spoil": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "Spoil",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "PoisonusBlow": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "PoisonusBlow",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Feeler": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "Feeler",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "Psych-out": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "Psych-out",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "SpreadBlaster": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "SpreadBlaster",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Hot"
+        ]
+      },
+      "HellWing": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "HellWing",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "GrapeShot": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "GrapeShot",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move"
+        ]
+      },
+      "ArcticBreath": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "ArcticBreath",
+        "sends": [
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down",
+          "Hot"
+        ]
+      },
+      "IceSmash": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "IceSmash",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot"
+        ]
+      },
+      "Crystalizer": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "Crystalizer",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "TigerRampage": {
+        "skillType": "Mystic Glove",
+        "multiTarget": false,
+        "oldName": "TigerRampage",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Black Out"
+        ]
+      }
+    },
+    "Mystic Boots": {
+      "Sweep": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "Sweep",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "PowerKick": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "PowerKick",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Cold"
+        ]
+      },
+      "ThunderBall": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "ThunderBall",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "BladeNet": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "BladeNet",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot"
+        ]
+      },
+      "Spiders": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "Spiders",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Instant Stop"
+        ]
+      },
+      "Suffocation": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "Suffocation",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Tremor": {
+        "skillType": "Mystic Boots",
+        "multiTarget": true,
+        "oldName": "Tremor",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "MysteryTap": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "MysteryTap",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "QuickSand": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "QuickSand",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      },
+      "ThunderBolt": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "ThunderBolt",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Assasinate": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "Assasinate",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "TitasWave": {
+        "skillType": "Mystic Boots",
+        "multiTarget": false,
+        "oldName": "TitasWave",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Down",
+          "Hot",
+          "Cold"
+        ]
+      }
+    },
+    "Light Magic": {
+      "Sunray": {
+        "skillType": "Light Magic",
+        "multiTarget": false,
+        "oldName": "Sunray",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "FlashFire": {
+        "skillType": "Light Magic",
+        "multiTarget": true,
+        "oldName": "FlashFire",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Cold"
+        ]
+      },
+      "FlashFlood": {
+        "skillType": "Light Magic",
+        "multiTarget": false,
+        "oldName": "FlashFlood",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "MegaWindblast": {
+        "skillType": "Light Magic",
+        "multiTarget": true,
+        "oldName": "MegaWindblast",
+        "sends": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      }
+    },
+    "Shadow Magic": {
+      "PowerGrab": {
+        "skillType": "Shadow Magic",
+        "multiTarget": false,
+        "oldName": "PowerGrab",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Hidebehind": {
+        "skillType": "Shadow Magic",
+        "multiTarget": false,
+        "oldName": "Hidebehind",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move"
+        ]
+      },
+      "ShadowNet": {
+        "skillType": "Shadow Magic",
+        "multiTarget": true,
+        "oldName": "ShadowNet",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot",
+          "Cold"
+        ]
+      },
+      "DarkSphere": {
+        "skillType": "Shadow Magic",
+        "multiTarget": false,
+        "oldName": "DarkSphere",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Move",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      }
+    },
+    "Space Magic": {
+      "VaporBlast": {
+        "skillType": "Space Magic",
+        "multiTarget": false,
+        "oldName": "VaporBlast",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "Vanish": {
+        "skillType": "Space Magic",
+        "multiTarget": false,
+        "oldName": "Vanish",
+        "sends": [],
+        "recieves": []
+      },
+      "ReverseGravity": {
+        "skillType": "Space Magic",
+        "multiTarget": true,
+        "oldName": "ReverseGravity",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "Vortex": {
+        "skillType": "Space Magic",
+        "multiTarget": false,
+        "oldName": "Vortex",
+        "sends": [],
+        "recieves": []
+      }
+    },
+    "Time Magic": {
+      "DelayOrder": {
+        "skillType": "Time Magic",
+        "multiTarget": false,
+        "oldName": "DelayOrder",
+        "sends": [
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "TimeLeap": {
+        "skillType": "Time Magic",
+        "multiTarget": false,
+        "oldName": "TimeLeap",
+        "sends": [],
+        "recieves": []
+      },
+      "ChaosStream": {
+        "skillType": "Time Magic",
+        "multiTarget": true,
+        "oldName": "ChaosStream",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Move",
+          "Hot",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move",
+          "Hot",
+          "Black Out"
+        ]
+      },
+      "TimeEclipse": {
+        "skillType": "Time Magic",
+        "multiTarget": false,
+        "oldName": "TimeEclipse",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Hot",
+          "Cold"
+        ]
+      }
+    },
+    "Realm Magic": {
+      "EnergyChain": {
+        "skillType": "Realm Magic",
+        "multiTarget": false,
+        "oldName": "EnergyChain",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "Implosion": {
+        "skillType": "Realm Magic",
+        "multiTarget": false,
+        "oldName": "Implosion",
+        "sends": [
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      },
+      "PsychicPrison": {
+        "skillType": "Realm Magic",
+        "multiTarget": false,
+        "oldName": "PsychicPrison",
+        "sends": [],
+        "recieves": []
+      },
+      "VermilionSand": {
+        "skillType": "Realm Magic",
+        "multiTarget": true,
+        "oldName": "VermilionSand",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Move",
+          "Hot"
+        ],
+        "recieves": [
+          "Down",
+          "Move",
+          "Cold"
+        ]
+      }
+    },
+    "Mystic Magic": {
+      "Fascination": {
+        "skillType": "Mystic Magic",
+        "multiTarget": false,
+        "oldName": "Fascination",
+        "sends": [],
+        "recieves": []
+      },
+      "PhantasmShot": {
+        "skillType": "Mystic Magic",
+        "multiTarget": false,
+        "oldName": "PhantasmShot",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      }
+    },
+    "Mind Magic": {
+      "Spellbound": {
+        "skillType": "Mind Magic",
+        "multiTarget": false,
+        "oldName": "Spellbound",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "LifeWave": {
+        "skillType": "Mind Magic",
+        "multiTarget": false,
+        "oldName": "LifeWave",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Hot",
+          "Cold"
+        ]
+      }
+    },
+    "Evil Magic": {
+      "RavaShot": {
+        "skillType": "Evil Magic",
+        "multiTarget": false,
+        "oldName": "RavaShot",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Instant Stop",
+          "Move"
+        ]
+      },
+      "PainDoubler": {
+        "skillType": "Evil Magic",
+        "multiTarget": true,
+        "oldName": "PainDoubler",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Dead Stop"
+        ]
+      },
+      "DeathCurse": {
+        "skillType": "Evil Magic",
+        "multiTarget": false,
+        "oldName": "DeathCurse",
+        "sends": [],
+        "recieves": []
+      },
+      "SharpPain": {
+        "skillType": "Evil Magic",
+        "multiTarget": true,
+        "oldName": "SharpPain",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop",
+          "Cold"
+        ],
+        "recieves": [
+          "Down"
+        ]
+      }
+    },
+    "Arcane Magic": {
+      "Saber": {
+        "skillType": "Arcane Magic",
+        "multiTarget": false,
+        "oldName": "Saber",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot"
+        ]
+      },
+      "Gold": {
+        "skillType": "Arcane Magic",
+        "multiTarget": false,
+        "oldName": "Gold",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "Death": {
+        "skillType": "Arcane Magic",
+        "multiTarget": false,
+        "oldName": "Death",
+        "sends": [],
+        "recieves": []
+      },
+      "Tower": {
+        "skillType": "Arcane Magic",
+        "multiTarget": false,
+        "oldName": "Tower",
+        "sends": [
+          "Down",
+          "Instant Stop",
+          "Hot"
+        ],
+        "recieves": [
+          "Dead Stop",
+          "Move",
+          "Cold"
+        ]
+      }
+    },
+    "Rune Magic": {
+      "DwarfRune": {
+        "skillType": "Rune Magic",
+        "multiTarget": false,
+        "oldName": "DwarfRune",
+        "sends": [],
+        "recieves": []
+      },
+      "StasisRune": {
+        "skillType": "Rune Magic",
+        "multiTarget": false,
+        "oldName": "StasisRune",
+        "sends": [],
+        "recieves": []
+      }
+    },
+    "Mirage Magic": {
+      "BlackCat": {
+        "skillType": "Mirage Magic",
+        "multiTarget": false,
+        "oldName": "BlackCat",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Nightmare": {
+        "skillType": "Mirage Magic",
+        "multiTarget": false,
+        "oldName": "Nightmare",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Jackal": {
+        "skillType": "Mirage Magic",
+        "multiTarget": false,
+        "oldName": "Jackal",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Cockatrice": {
+        "skillType": "Mirage Magic",
+        "multiTarget": false,
+        "oldName": "Cockatrice",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      },
+      "Reaper": {
+        "skillType": "Mirage Magic",
+        "multiTarget": false,
+        "oldName": "Reaper",
+        "sends": [
+          "Dead Stop",
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": [
+          "Hot",
+          "Cold"
+        ]
+      }
+    },
+    "Consumable Items": {
+      "*UnluckyCoin*": {
+        "skillType": "Consumable Items",
+        "multiTarget": false,
+        "oldName": "*UnluckyCoin*",
+        "sends": [],
+        "recieves": []
+      },
+      "*RottenMeat*": {
+        "skillType": "Consumable Items",
+        "multiTarget": false,
+        "oldName": "*RottenMeat*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "*MagicStone*": {
+        "skillType": "Consumable Items",
+        "multiTarget": false,
+        "oldName": "*MagicStone*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "*FlashBomb*": {
+        "skillType": "Consumable Items",
+        "multiTarget": false,
+        "oldName": "*FlashBomb*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      },
+      "*StunNeedle*": {
+        "skillType": "Consumable Items",
+        "multiTarget": false,
+        "oldName": "*StunNeedle*",
+        "sends": [
+          "Down",
+          "Instant Stop"
+        ],
+        "recieves": []
+      }
     }
-}
+  }
