@@ -21,7 +21,32 @@ export const SkillTypes = Object.freeze(
         Katana: "Katana",
         Gun: "Gun",
         "Martial Arts": "Martial Arts",
-        Alkaiser: "Alkaiser"
+        Alkaiser: "Alkaiser",
+        "Item-Inherent": "Item-Inherent",
+        "Heavy Weapons": "Heavy Weapons",
+        "Mec Parts": "Mec Parts",
+        "Mec Programs": "Mec Programs",
+        "Monster (Head)": "Monster (Head)",
+        "Monster (Arm)": "Monster (Arm)",
+        "Monster (Leg)": "Monster (Leg)",
+        "Monster (Body)": "Monster (Body)",
+        "Monster (Breath)": "Monster (Breath)",
+        "Monster (Magical)": "Monster (Magical)",
+        "Mystic Sword": "Mystic Sword",
+        "Mystic Glove": "Mystic Glove",
+        "Mystic Boots": "Mystic Boots",
+        "Light Magic": "Light Magic",
+        "Shadow Magic": "Shadow Magic",
+        "Space Magic": "Space Magic",
+        "Time Magic": "Time Magic",
+        "Realm Magic": "Realm Magic",
+        "Mystic Magic": "Mystic Magic",
+        "Mind Magic": "Mind Magic",
+        "Evil Magic": "Evil Magic",
+        "Arcane Magic": "Arcane Magic",
+        "Rune Magic": "Rune Magic",
+        "Mirage Magic": "Mirage Magic",
+        "Consumable Items": "Consumable Items"
     }  
 )
 
