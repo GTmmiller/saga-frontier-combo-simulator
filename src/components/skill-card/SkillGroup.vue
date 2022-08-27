@@ -15,7 +15,7 @@
         {{menuSkill.oldName}}
     </a>
   </div>
-  <hr class="dropdown-divider" v-if="drawDivider"/>
+  <hr class="dropdown-divider" v-if="drawDivider && !hideSkills"/>
 </template>
 
 <script>

@@ -10,7 +10,7 @@
           </span>
         </button>
       </div>
-      <div class="dropdown-menu"
+      <div class="dropdown-menu extended-menu"
         :class="{'is-hidden': !dropDownActive}">
         <div class="dropdown-content scroll-content">
         <SkillGroup
@@ -70,13 +70,8 @@ export default {
     handleSkillSelect(event) {
       event.index = this.comboIndex
       this.$emit('skillSelect', event)
+      this.dropDownActive = false
     }
-  //   selectSkill(skillKey) {
-  //     this.$emit('skillSelect', {index: this.comboIndex, skillKey})
-  //   },
-  //   createSkillKey(skill) {
-  //     return "".concat(skill.skillType, "_", skill.oldName)
-  //   }
   }
 }
 </script>
@@ -84,6 +79,10 @@ export default {
 <style scoped>
   .scroll-content {
     max-height: 20em;
-    overflow: auto;
+    overflow-y: auto;
+  }
+
+  .extended-menu {
+    min-width: 15rem;
   }
 </style>
