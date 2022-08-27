@@ -23,6 +23,16 @@
         </div>
       </div>
     </div>
+    <div class="columns">
+      <div class="column">
+        *
+        <ComboTypeTags :comboTypes="skill.recieves" />
+      </div>
+      <div class="column">
+        ->
+        <ComboTypeTags :comboTypes="skill.sends" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,11 +40,13 @@
 import {Skill} from '../modules/saga-frontier-combo'
 
 import SkillGroup from './skill-card/SkillGroup.vue'
+import ComboTypeTags from './skill-card/ComboTypeTags.vue'
 
 export default {
   name: 'SkillCard',
   components: {
-    SkillGroup
+    SkillGroup,
+    ComboTypeTags
   },
   data() {
     return {

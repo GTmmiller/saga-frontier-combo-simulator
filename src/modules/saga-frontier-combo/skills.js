@@ -2,42 +2,58 @@ import { Set } from 'immutable'
 
 export const ComboTypes = Object.freeze(
     {
-        "Dead Stop": Symbol('Dead Stop'),
-        "Down": Symbol('Down'),
-        "Instant Stop": Symbol('Instant Stop'),
-        "Move": Symbol('Move'),
-        "Hot": Symbol('Hot'),
-        "Cold": Symbol('Cold'),
-        "Black Out": Symbol('Black Out'),
-        "Snow": Symbol('Snow')
+        "Dead Stop": "Dead Stop",
+        Down: "Down",
+        "Instant Stop": "Instant Stop",
+        Move: "Move",
+        Hot: "Hot",
+        Cold: "Cold",
+        "Black Out": "Black Out",
+        Snow: "Snow"
     }
 )
 
+export const ComboTypeKeys = Set(Object.keys(ComboTypes))
 
 export const SkillTypes = Object.freeze(
     {
-        Sword: Symbol('Sword'),
-        Katana: Symbol('Katana'),
-        Gun: Symbol('Gun')
+        Sword: "Sword",
+        Katana: "Katana",
+        Gun: "Gun",
+        "Martial Arts": "Martial Arts",
+        Alkaiser: "Alkaiser"
     }  
 )
+
 
 export class Skill {
     /**
      * Represents a Skill in SaGa Frontier
      * @param {String} newName - The name of the skill in the remake 
      * @param {String} oldName - The name of the skill in the original version
-     * @param {Symbol} skillType - The type of skill it is. Should be a symbol from skillTypes.  
-     * @param {Set<Symbol>} sends - The combo types this skill sends to the next attack. 
-     * @param {Set<Symbol>} recieves - The combo types this skill can combo from 
+     * @param {String} skillType - The type of skill it is. Should be included in SkillTypes  
+     * @param {Array<String>} sends - The combo types this skill sends to the next attack. 
+     * @param {Array<String>} recieves - The combo types this skill can combo from 
      * @param {Boolean} multiTarget - If the attack is single or multi target. Multi target attacks can only end combos.
      */
     constructor(newName, oldName, skillType, sends, recieves, multiTarget) {
+        if(SkillTypes[skillType] === undefined) {
+            throw new Error("Skill Type '" + skillType + "' is not a known Skill Type")
+        }
+
+        if(!ComboTypeKeys.keySeq().isSuperset(sends)) {
+            throw new Error("Unknown combo type in sends array. sends: " + sends)
+        }
+
+        if (!ComboTypeKeys.keySeq().isSuperset(recieves)) {
+            throw new Error("Unknown combo type in recieves array. recieves: " + recieves)
+        }
+        
         this.newName = newName
         this.oldName = oldName
         this.skillType = skillType
-        this.sends = sends
-        this.recieves = recieves
+        this.sends = Set(sends)
+        this.recieves = Set(recieves)
         this.multiTarget = multiTarget
     }
 
@@ -73,16 +89,15 @@ export class Skill {
     }
 
     static fromJson(jsonObject) {
-        // TODO: errors on bad json objects
         return new Skill(
             jsonObject.newName, 
-            jsonObject.oldName, 
-            SkillTypes[jsonObject.skillType],
-            Set(jsonObject.sends.map(type => ComboTypes[type])),
-            Set(jsonObject.recieves.map(type => ComboTypes[type])),
+            jsonObject.oldName,
+            jsonObject.skillType,
+            jsonObject.sends,
+            jsonObject.recieves,
             jsonObject.multiTarget
         )
     }
 }
 
-export const PLACEHOLDER_SKILL = new Skill("No Skill Selected", "No Skill Selected", "PlaceHolder", Set(), Set(), false)
+export const PLACEHOLDER_SKILL = new Skill("No Skill Selected", "No Skill Selected", "Sword", Set(), Set(), false)
