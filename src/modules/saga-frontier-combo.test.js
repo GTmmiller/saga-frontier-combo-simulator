@@ -70,6 +70,24 @@ describe('Skill Class', () => {
         expect(jsonSkill.recieves).toStrictEqual(Set([ComboTypes["Dead Stop"], ComboTypes.Move]))
         expect(jsonSkill.multiTarget).toBeFalsy()
     })
+
+    test('errors on invalid skilltype', () => {
+        expect( () => {
+            new Skill("badSkill", "badSkill", "Invalid SkillType")
+        }).toThrow("Skill Type 'Invalid SkillType' is not a known Skill Type")
+    })
+
+    test('errors on invalid sending combotype', () => {
+        expect( () => {
+            new Skill("badSkill", "badSkill", "Sword", ["HotDog"])
+        }).toThrow("Unknown combo type in sends array. sends: " + ["HotDog"])
+    })
+
+    test('errors on invalid recieves combotypes', () => {
+        expect( () => {
+            new Skill("badSkill", "badSkill", "Sword", [], ["HotDog"], false)
+        }).toThrow("Unknown combo type in recieves array. recieves: " + ["HotDog"])
+    })
 })
 
 describe('Combo Class', () => {
