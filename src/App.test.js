@@ -82,4 +82,33 @@ describe('Top-Level App', () => {
         expect(screen.getByText("2")).toBeTruthy()
         expect(screen.getAllByText("3")).toHaveLength(2)
     })
+
+    test('Filtering skills on a non-comboable skill should show a message', async() => {
+        const dropDowns = screen.getAllByText("No Skill Selected")
+        const doubleVerts = screen.getAllByText("DoubleSlash")
+
+        await fireEvent.click(dropDowns[0])
+        await fireEvent.click(doubleVerts[0])
+        await fireEvent.click(dropDowns[1])
+
+        const filterBox = screen.getAllByText("Combo Skills Only")
+
+        await fireEvent.click(filterBox[1])
+        expect(screen.getByText("No skills selectable")).toBeTruthy()
+    })
+
+    test('Filtering skills should reduce the visible dropdown skills', async() => {
+        const dropDowns = screen.getAllByText("No Skill Selected")
+        const thrusts = screen.getAllByText("Thrust")
+
+        await fireEvent.click(dropDowns[0])
+        await fireEvent.click(thrusts[0])
+        await fireEvent.click(dropDowns[1])
+
+        const filterBox = screen.getAllByText("Combo Skills Only")
+
+        await fireEvent.click(filterBox[1])
+        
+        expect(screen.getAllByText("StunSlash")).toHaveLength(4)
+    })
 })

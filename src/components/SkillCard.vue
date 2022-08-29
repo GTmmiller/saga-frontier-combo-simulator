@@ -13,13 +13,24 @@
       <div class="dropdown-menu extended-menu"
         :class="{'is-hidden': !dropDownActive}">
         <div class="dropdown-content scroll-content">
-        <SkillGroup
-          v-for="(skills, skillType, index) in jsonSkills" :key="skillType" 
-          :selectedSkill="skill"
-          :skillType="skillType"
-          :skills="skills"
-          :drawDivider="index < Object.keys(jsonSkills).length - 1" 
-          @skillSelect="handleSkillSelect" />
+          <div class="dropdown-item">
+            <label class="checkbox">
+              <input type="checkbox" v-model.lazy="comboFilter" />
+              Combo Skills Only
+            </label>
+          </div>
+          <template v-if="Object.keys(filteredSkills).length > 0">
+            <SkillGroup
+              v-for="(skillList, skillType, index) in filteredSkills" :key="skillType" 
+              :selectedSkill="skill"
+              :skillType="skillType"
+              :skillList="skillList"
+              :drawDivider="index < Object.keys(skills).length - 1" 
+              @skillSelect="handleSkillSelect" />
+          </template>
+          <div class="dropdown-item" v-else>
+            No skills selectable
+          </div>
         </div>
       </div>
     </div>
@@ -50,7 +61,8 @@ export default {
   },
   data() {
     return {
-      dropDownActive: false
+      dropDownActive: false,
+      comboFilter: false
     }
   },
   props: {
@@ -58,23 +70,42 @@ export default {
       type: Skill,
       required: true
     },
-    jsonSkills: {
+    skills: {
       type: Object,
       required: true
     },
     comboIndex: {
       type: Number,
       required: true
+    },
+    previousSkill: {
+      type: Skill
     }
-  },
-  computed: {
   },
   emits: {
     skillSelect: (payload) => {
-      if ((payload.index === 0 || payload.index) && payload.skillKey) {
+      if ((payload.index === 0 || payload.index) && payload.skillType && payload.oldName) {
         return true
       } else {
         return false
+      }
+    }
+  },
+  computed: {
+    filteredSkills() {
+      if(this.comboFilter && this.previousSkill !== null) {
+        return Object.fromEntries(
+          Object.entries(this.skills).map( ([skillType, skillList]) => {
+            const filteredSkills = Object.fromEntries(
+              Object.entries(skillList).filter(
+                ([, skill]) => this.previousSkill.canSendCombo(skill)
+              )
+            )
+            return [skillType, filteredSkills]
+          }).filter(([, skillList]) => Object.keys(skillList).length > 0)
+        )
+      } else {
+        return this.skills
       }
     }
   },

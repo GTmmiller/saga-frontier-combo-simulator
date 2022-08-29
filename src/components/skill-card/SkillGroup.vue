@@ -9,9 +9,9 @@
   <hr class="dropdown-divider"/>
   <div id="skillBody" :class="{'is-hidden': hideSkills}">
     <a class="dropdown-item"
-        v-for="(menuSkill, skillKey) in skills" :key="skillKey"
+        v-for="(menuSkill, skillKey) in skillList" :key="skillKey"
         :class="{'is-active': selectedSkill.oldName === menuSkill.oldName}"
-        @click="selectSkill(createSkillKey(menuSkill))">
+        @click="selectSkill(menuSkill)">
         {{menuSkill.oldName}}
     </a>
   </div>
@@ -37,7 +37,7 @@ export default {
       type: String,
       required: true
     },
-    skills: {
+    skillList: {
       type: Object,
       required: true
     },
@@ -50,7 +50,7 @@ export default {
   },
   emits: {
     skillSelect: (payload) => {
-      if (payload.skillKey) {
+      if (payload.skillType && payload.oldName) {
         return true
       } else {
         return false
@@ -58,12 +58,9 @@ export default {
     }
   },
   methods: {
-    selectSkill(skillKey) {
-      this.$emit('skillSelect', {skillKey})
+    selectSkill(skill) {
+      this.$emit('skillSelect', {skillType: skill.skillType, oldName: skill.oldName})
     },
-    createSkillKey(skill) {
-      return "".concat(skill.skillType, "_", skill.oldName)
-    }
   }
 }
 </script>
