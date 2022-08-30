@@ -4,7 +4,7 @@
       :class="{'is-active': dropDownActive}">
       <div class="dropdown-trigger">
         <button class="button" @click="dropDownActive = !dropDownActive">
-          <span>{{skill.oldName}}</span>
+          <span>{{skill.getName(remasteredNames)}}</span>
           <span class="icon is-small">
             <i class="fas fa-angle-down"></i>
           </span>
@@ -25,7 +25,8 @@
               :selectedSkill="skill"
               :skillType="skillType"
               :skillList="skillList"
-              :drawDivider="index < Object.keys(skills).length - 1" 
+              :drawDivider="index < Object.keys(skills).length - 1"
+              :remasteredNames="remasteredNames"
               @skillSelect="handleSkillSelect" />
           </template>
           <div class="dropdown-item" v-else>
@@ -80,6 +81,10 @@ export default {
     },
     previousSkill: {
       type: Skill
+    },
+    remasteredNames: {
+      type: Boolean,
+      required: true
     }
   },
   emits: {

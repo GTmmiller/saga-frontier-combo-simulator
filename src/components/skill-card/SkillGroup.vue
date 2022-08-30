@@ -12,7 +12,7 @@
         v-for="(menuSkill, skillKey) in skillList" :key="skillKey"
         :class="{'is-active': selectedSkill.oldName === menuSkill.oldName}"
         @click="selectSkill(menuSkill)">
-        {{menuSkill.oldName}}
+        {{menuSkill.getName(remasteredNames)}}
     </a>
   </div>
   <hr class="dropdown-divider" v-if="drawDivider && !hideSkills"/>
@@ -42,6 +42,10 @@ export default {
       required: true
     },
     drawDivider: {
+      type: Boolean,
+      default: true
+    },
+    remasteredNames: {
       type: Boolean,
       default: true
     }

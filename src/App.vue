@@ -1,6 +1,10 @@
 <template>
   <div class="container">
     <h1 class="title">Combo Simulator</h1>
+    <label class="checkbox">
+      <input type="checkbox" v-model.lazy="remasteredNames" />
+      Remastered Names
+    </label>
     <div class="columns is-vcentered">
       
       <template v-for="(skill, index) in combo" :key="index">
@@ -10,6 +14,7 @@
             :previousSkill="index > 0 ? combo.getSkill(index - 1) : null"
             :skills="skills"
             :comboIndex="index"
+            :remasteredNames="remasteredNames"
             @skillSelect="handleSkillSelect" />
         </div>
         <div class="column is-narrow"
@@ -70,7 +75,8 @@ export default {
 
     return {
       combo,
-      skills
+      skills,
+      remasteredNames: false
     }
   },
   computed: {
