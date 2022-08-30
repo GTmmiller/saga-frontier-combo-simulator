@@ -18,6 +18,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "DoubleSlash",
+        "newName": "Double Vertical",
         "sends": [],
         "recieves": [
           "Down",
@@ -28,6 +29,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "HardSlash",
+        "newName": "Sunder",
         "sends": [
           "Dead Stop",
           "Down",
@@ -43,6 +45,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "Thrust",
+        "newName": "Thrust",
         "sends": [
           "Down",
           "Instant Stop"
@@ -56,6 +59,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "CrossSlash",
+        "newName": "Cross Slash",
         "sends": [],
         "recieves": [
           "Down",
@@ -68,6 +72,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "Smash",
+        "newName": "Smash",
         "sends": [
           "Instant Stop"
         ],
@@ -80,6 +85,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "SwallowSwing",
+        "newName": "Swallow Slice",
         "sends": [
           "Dead Stop",
           "Down",
@@ -96,6 +102,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "ThunderThrust",
+        "newName": "Lightning Thrust",
         "sends": [
           "Dead Stop",
           "Down",
@@ -112,6 +119,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "Heaven/Hell",
+        "newName": "Heaven and Earth",
         "sends": [],
         "recieves": [
           "Instant Stop",
@@ -123,6 +131,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "WheelSlash",
+        "newName": "Wheel Swing",
         "sends": [
           "Dead Stop",
           "Down",
@@ -137,6 +146,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "WillowBranch",
+        "newName": "Willow Branch",
         "sends": [
           "Dead Stop",
           "Down",
@@ -152,6 +162,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "Deflect",
+        "newName": "Deflect",
         "sends": [],
         "recieves": []
       },
@@ -159,6 +170,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "BearCrush",
+        "newName": "Ursine Assault",
         "sends": [
           "Instant Stop"
         ],
@@ -171,6 +183,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "DeadEnd",
+        "newName": "Dead End",
         "sends": [],
         "recieves": [
           "Dead Stop",
@@ -182,6 +195,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "HeadWind",
+        "newName": "Headwind Rush",
         "sends": [
           "Down",
           "Instant Stop"
@@ -197,6 +211,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "TripleThrust",
+        "newName": "Triple Thrust",
         "sends": [
           "Down",
           "Instant Stop"
@@ -211,6 +226,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "Kasumi",
+        "newName": "Optical Slash",
         "sends": [],
         "recieves": []
       },
@@ -218,6 +234,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "NoMoment",
+        "newName": "No Rhythm",
         "sends": [
           "Down",
           "Instant Stop"
@@ -232,6 +249,7 @@
         "skillType": "Sword",
         "multiTarget": true,
         "oldName": "GaleSlash",
+        "newName": "Tornado Slash",
         "sends": [
           "Dead Stop",
           "Down",
@@ -247,6 +265,7 @@
         "skillType": "Sword",
         "multiTarget": true,
         "oldName": "2GaleSlash",
+        "newName": "Twin Gales",
         "sends": [
           "Dead Stop",
           "Down",
@@ -262,6 +281,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "StillStream",
+        "newName": "Clear Water",
         "sends": [
           "Instant Stop"
         ],
@@ -275,6 +295,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "TurbidCurrent",
+        "newName": "Turbid Current",
         "sends": [
           "Down",
           "Instant Stop",
@@ -290,6 +311,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "CrossDeflect",
+        "newName": "Cross Deflect",
         "sends": [],
         "recieves": []
       },
@@ -297,6 +319,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "RisingNova",
+        "newName": "Rising Nova",
         "sends": [
           "Instant Stop",
           "Move"
@@ -310,6 +333,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "RosarioImpale",
+        "newName": "Rosario Impale",
         "sends": [
           "Dead Stop",
           "Down",
@@ -324,6 +348,7 @@
         "skillType": "Sword",
         "multiTarget": true,
         "oldName": "Haze-to-Wheel",
+        "newName": "Floating Juggernaut",
         "sends": [
           "Dead Stop",
           "Down",
@@ -338,6 +363,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "LifeSprinkler",
+        "newName": "Spray of Life",
         "sends": [
           "Down",
           "Instant Stop"
@@ -353,6 +379,7 @@
         "skillType": "Sword",
         "multiTarget": false,
         "oldName": "Godless",
+        "newName": "Apathy",
         "sends": [],
         "recieves": []
       }
@@ -362,6 +389,7 @@
         "skillType": "Katana",
         "multiTarget": false,
         "oldName": "MoonlightCut",
+        "newName": "Surging Lunar Blade",
         "sends": [
           "Dead Stop",
           "Cold",
@@ -375,6 +403,7 @@
         "skillType": "Katana",
         "multiTarget": false,
         "oldName": "ShadowCounter",
+        "newName": "Shadow Reversal",
         "sends": [
           "Down",
           "Instant Stop"
@@ -390,6 +419,7 @@
         "skillType": "Katana",
         "multiTarget": false,
         "oldName": "Blizzard",
+        "newName": "Blizzard",
         "sends": [
           "Dead Stop",
           "Down",
@@ -402,6 +432,7 @@
         "skillType": "Katana",
         "multiTarget": false,
         "oldName": "Tres Flores",
+        "newName": "Tres Flores",
         "sends": [],
         "recieves": [
           "Black Out"
@@ -413,6 +444,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "SharpShot",
+        "newName": "Sharp Shot",
         "sends": [
           "Instant Stop"
         ],
@@ -426,6 +458,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "FocusShot",
+        "newName": "Focus Shot",
         "sends": [
           "Instant Stop"
         ],
@@ -439,6 +472,7 @@
         "skillType": "Gun",
         "multiTarget": true,
         "oldName": "TotalShot",
+        "newName": "TotalShot",
         "sends": [
           "Instant Stop"
         ],
@@ -451,6 +485,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "TrickShot",
+        "newName": "Trick Shot",
         "sends": [
           "Instant Stop"
         ],
@@ -463,6 +498,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "ReactionShot",
+        "newName": "Reaction Shot",
         "sends": [],
         "recieves": []
       },
@@ -470,6 +506,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "StunShot",
+        "newName": "Stunning Shot",
         "sends": [
           "Dead Stop",
           "Down",
@@ -482,6 +519,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "CrossShot",
+        "newName": "Cross Shot",
         "sends": [
           "Dead Stop",
           "Down",
@@ -497,6 +535,7 @@
         "skillType": "Gun",
         "multiTarget": false,
         "oldName": "BoundShot",
+        "newName": "Bounding Shot",
         "sends": [
           "Dead Stop",
           "Down",
@@ -514,6 +553,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Kick",
+        "newName": "Kick",
         "sends": [
           "Instant Stop"
         ],
@@ -526,6 +566,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "AirThrow",
+        "newName": "Tumble",
         "sends": [
           "Down",
           "Instant Stop",
@@ -541,6 +582,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Chop",
+        "newName": "Chop",
         "sends": [
           "Down",
           "Instant Stop"
@@ -555,6 +597,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Sliding",
+        "newName": "Slide",
         "sends": [
           "Dead Stop",
           "Down",
@@ -568,6 +611,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "RollingCradle",
+        "newName": "Rolling Cradle",
         "sends": [
           "Dead Stop",
           "Down",
@@ -583,6 +627,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "SwayBack",
+        "newName": "Sway Back",
         "sends": [],
         "recieves": []
       },
@@ -590,6 +635,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Fist",
+        "newName": "Pressure Point",
         "sends": [
           "Dead Stop",
           "Down",
@@ -606,6 +652,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "BackFist",
+        "newName": "Backhand",
         "sends": [
           "Down",
           "Instant Stop"
@@ -620,6 +667,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "CrushBeat",
+        "newName": "Fists of Fury",
         "sends": [
           "Instant Stop"
         ],
@@ -633,6 +681,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "RotationKick",
+        "newName": "Whirlwind Kick",
         "sends": [
           "Dead Stop",
           "Down",
@@ -648,6 +697,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "KO Throw",
+        "newName": "K.O. Throw",
         "sends": [],
         "recieves": []
       },
@@ -655,6 +705,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Suplex",
+        "newName": "Suplex",
         "sends": [
           "Down",
           "Instant Stop",
@@ -670,6 +721,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "GiantSwing",
+        "newName": "Giant Swing",
         "sends": [
           "Down",
           "Instant Stop",
@@ -685,6 +737,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "GoldHand",
+        "newName": "Gilded Hand",
         "sends": [
           "Down",
           "Instant Stop"
@@ -698,6 +751,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "BabelCrumble",
+        "newName": "Collapse",
         "sends": [
           "Down",
           "Instant Stop"
@@ -712,6 +766,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "TriangleKick",
+        "newName": "Triangle Kick",
         "sends": [
           "Dead Stop",
           "Down",
@@ -726,6 +781,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "OgreRun",
+        "newName": "Ogre Rush",
         "sends": [
           "Dead Stop",
           "Down",
@@ -741,6 +797,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Scuffle",
+        "newName": "Scuffle",
         "sends": [],
         "recieves": [
           "Instant Stop"
@@ -750,6 +807,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "LocomotionG",
+        "newName": "Locomotion G",
         "sends": [
           "Down",
           "Instant Stop"
@@ -764,6 +822,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "DragonTurn",
+        "newName": "Dragonscrew",
         "sends": [],
         "recieves": []
       },
@@ -771,6 +830,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Lastshot",
+        "newName": "Raksha",
         "sends": [
           "Instant Stop"
         ],
@@ -784,6 +844,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "Corkscrew",
+        "newName": "Triple Dragon",
         "sends": [
           "Dead Stop",
           "Down",
@@ -799,6 +860,7 @@
         "skillType": "Martial Arts",
         "multiTarget": false,
         "oldName": "SkyTwister",
+        "newName": "Sky Twister",
         "sends": [
           "Down",
           "Instant Stop"
@@ -815,6 +877,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "RaySword",
+        "newName": "Ray Sword",
         "sends": [
           "Down",
           "Instant Stop"
@@ -827,6 +890,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "KaiserWing",
+        "newName": "Kaiser Wing",
         "sends": [
           "Down",
           "Instant Stop"
@@ -842,6 +906,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "KaiserSmash",
+        "newName": "Kaiser Smash",
         "sends": [
           "Down",
           "Instant Stop"
@@ -855,6 +920,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "BrightFist",
+        "newName": "Shining Punch",
         "sends": [
           "Instant Stop",
           "Move"
@@ -869,6 +935,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "SparklingRoll",
+        "newName": "Sparkling Roll",
         "sends": [
           "Instant Stop",
           "Move"
@@ -883,6 +950,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "FlashTurn",
+        "newName": "Flash Screw",
         "sends": [
           "Dead Stop",
           "Down",
@@ -899,6 +967,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "Al-Blaster",
+        "newName": "Al-Blaster",
         "sends": [
           "Dead Stop",
           "Down",
@@ -915,6 +984,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "Al-Phoenix",
+        "newName": "Al-Phoenix",
         "sends": [
           "Dead Stop",
           "Down",
@@ -931,6 +1001,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "Re-Al-Phoenix",
+        "newName": "Al-Phoenix X",
         "sends": [
           "Dead Stop",
           "Down",
@@ -947,6 +1018,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "ShiningKick",
+        "newName": "Shining Kick",
         "sends": [
           "Instant Stop",
           "Move"
@@ -961,6 +1033,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "DeflectLance",
+        "newName": "Deflecting Lance",
         "sends": [
           "Instant Stop",
           "Move"
@@ -975,6 +1048,7 @@
         "skillType": "Alkaiser",
         "multiTarget": false,
         "oldName": "FinalCrusade",
+        "newName": "Final Crusade",
         "sends": [],
         "recieves": []
       }
@@ -984,6 +1058,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "ShadowHold",
+        "newName": "Shadow Hold",
         "sends": [
           "Dead Stop",
           "Down",
@@ -995,6 +1070,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "SilverFang",
+        "newName": "Silver Fangs",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1006,6 +1082,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "Kusanagi",
+        "newName": "Kusanagi",
         "sends": [
           "Instant Stop"
         ],
@@ -1019,6 +1096,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "Asura",
+        "newName": "Phantasm",
         "sends": [
           "Instant Stop"
         ],
@@ -1027,10 +1105,11 @@
           "Move"
         ]
       },
-      "*PurpleEye*": {
+      "PurpleEye": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*PurpleEye*",
+        "oldName": "PurpleEye",
+        "newName": "Purple Eye",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1045,6 +1124,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "Cockatrice",
+        "newName": "Cockatrice",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1055,10 +1135,11 @@
           "Cold"
         ]
       },
-      "*SeaStone*": {
+      "SeaStone": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*SeaStone*",
+        "oldName": "SeaStone",
+        "newName": "Sea Stone",
         "sends": [
           "Move",
           "Cold"
@@ -1073,6 +1154,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": true,
         "oldName": "SacredSong",
+        "newName": "Hymn",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1083,10 +1165,11 @@
           "Cold"
         ]
       },
-      "*Magihat*": {
+      "Magihat": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*Magihat*",
+        "oldName": "Magihat",
+        "newName": "Magihat",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1097,6 +1180,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "TwinSword",
+        "newName": "Zweihander",
         "sends": [],
         "recieves": [
           "Dead Stop",
@@ -1107,6 +1191,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "IronclogShot",
+        "newName": "Iron Shot",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1120,6 +1205,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "FinalStrike",
+        "newName": "Final Strike",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1136,6 +1222,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "ElementDissolve",
+        "newName": "Atomic Fission",
         "sends": [
           "Instant Stop"
         ],
@@ -1145,6 +1232,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": true,
         "oldName": "MillionDollers",
+        "newName": "Millionaire",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1161,6 +1249,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": true,
         "oldName": "Maelstrom",
+        "newName": "Maelstrom",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1171,10 +1260,11 @@
           "Hot"
         ]
       },
-      "*CharmNecklace*": {
+      "CharmNecklace": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*CharmNecklace*",
+        "oldName": "CharmNecklace",
+        "newName": "Charm Necklace",
         "sends": [
           "Instant Stop"
         ],
@@ -1184,6 +1274,7 @@
         "skillType": "Item-Inherent",
         "multiTarget": false,
         "oldName": "DirtyFang",
+        "newName": "Sullied Fang",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1192,10 +1283,11 @@
           "Dead Stop"
         ]
       },
-      "*SandVessel*": {
+      "SandVessel": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*SandVessel*",
+        "oldName": "SandVessel",
+        "newName": "Sand Vessel",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1204,10 +1296,11 @@
           "Down"
         ]
       },
-      "*DurahanShield*": {
+      "DurahanShield": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*DurahanShield*",
+        "oldName": "DurahanShield",
+        "newName": "Dullahan Shield",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1215,10 +1308,11 @@
         ],
         "recieves": []
       },
-      "*DanceShoes*": {
+      "DanceShoes": {
         "skillType": "Item-Inherent",
         "multiTarget": false,
-        "oldName": "*DanceShoes*",
+        "oldName": "DanceShoes",
+        "newName": "Dance Shoes",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1232,6 +1326,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "FlameThrower",
+        "newName": "Flame Thrower",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -1245,6 +1340,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "GhostCannon",
+        "newName": "Ghost Cannon",
         "sends": [
           "Instant Stop",
           "Cold"
@@ -1259,6 +1355,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "WaterCannon",
+        "newName": "Water Cannon",
         "sends": [
           "Move",
           "Cold"
@@ -1269,10 +1366,11 @@
           "Hot"
         ]
       },
-      "*SonicCannon*": {
+      "SonicCannon": {
         "skillType": "Heavy Weapons",
         "multiTarget": false,
-        "oldName": "*SonicCannon*",
+        "oldName": "SonicCannon",
+        "newName": "Sonic Cannon",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1284,10 +1382,11 @@
           "Black Out"
         ]
       },
-      "*DOBBYBazooka*": {
+      "DOBBYBazooka": {
         "skillType": "Heavy Weapons",
         "multiTarget": true,
-        "oldName": "*DOBBYBazooka*",
+        "oldName": "DOBBYBazooka",
+        "newName": "Dobby Bazooka",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1299,10 +1398,11 @@
           "Cold"
         ]
       },
-      "*Thunderbolt*": {
+      "Thunderbolt": {
         "skillType": "Heavy Weapons",
         "multiTarget": false,
-        "oldName": "*Thunderbolt*",
+        "oldName": "Thunderbolt",
+        "newName": "Thunderbolt",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1315,10 +1415,11 @@
           "Cold"
         ]
       },
-      "*LightningCannon*": {
+      "LightningCannon": {
         "skillType": "Heavy Weapons",
         "multiTarget": false,
-        "oldName": "*LightningCannon*",
+        "oldName": "LightningCannon",
+        "newName": "Lightning Cannon",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1331,10 +1432,11 @@
           "Cold"
         ]
       },
-      "*BoltThrower*": {
+      "BoltThrower": {
         "skillType": "Heavy Weapons",
         "multiTarget": false,
-        "oldName": "*BoltThrower*",
+        "oldName": "BoltThrower",
+        "newName": "Bolt Thrower",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1346,10 +1448,11 @@
           "Cold"
         ]
       },
-      "*BeamCannon*": {
+      "BeamCannon": {
         "skillType": "Heavy Weapons",
         "multiTarget": false,
-        "oldName": "*BeamCannon*",
+        "oldName": "BeamCannon",
+        "newName": "Beam Cannon",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -1364,6 +1467,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "DestructionBeam",
+        "newName": "Beam of Destruction",
         "sends": [
           "Instant Stop"
         ],
@@ -1378,6 +1482,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "Paralyzer",
+        "newName": "Paralyzer",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1389,6 +1494,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "Vulcan",
+        "newName": "Cannon",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1401,6 +1507,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "Blaster",
+        "newName": "Blaster",
         "sends": [
           "Instant Stop"
         ],
@@ -1415,6 +1522,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "BlasterSword",
+        "newName": "Blaster Sword",
         "sends": [
           "Instant Stop"
         ],
@@ -1428,6 +1536,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "PlasmaBullet",
+        "newName": "Plasma Gun",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1444,6 +1553,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "Missile",
+        "newName": "Missile",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -1454,10 +1564,11 @@
           "Cold"
         ]
       },
-      "*HyperionBazooka*": {
+      "HyperionBazooka": {
         "skillType": "Heavy Weapons",
         "multiTarget": false,
-        "oldName": "*HyperionBazooka*",
+        "oldName": "HyperionBazooka",
+        "newName": "Hyperion",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -1470,6 +1581,7 @@
         "skillType": "Heavy Weapons",
         "multiTarget": false,
         "oldName": "HE-Rocket",
+        "newName": "HE Rocket",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -1485,7 +1597,8 @@
       "MachineVulcan": {
         "skillType": "Mec Parts",
         "multiTarget": false,
-        "oldName": "MachineVulcan",
+        "oldName": "MachineVulcan", 
+        "newName": "Machine Cannon",
         "sends": [
           "Instant Stop"
         ],
@@ -1498,6 +1611,7 @@
         "skillType": "Mec Parts",
         "multiTarget": false,
         "oldName": "Graviton",
+        "newName": "Graviton",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1514,6 +1628,7 @@
         "skillType": "Mec Parts",
         "multiTarget": false,
         "oldName": "CosmicRave",
+        "newName": "Cosmic Wave",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1530,6 +1645,7 @@
         "skillType": "Mec Parts",
         "multiTarget": true,
         "oldName": "StarlightShower",
+        "newName": "Starlight Shower",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1542,6 +1658,7 @@
         "skillType": "Mec Parts",
         "multiTarget": false,
         "oldName": "BeamSword",
+        "newName": "Beam Sword",
         "sends": [
           "Instant Stop"
         ],
@@ -1554,6 +1671,7 @@
         "skillType": "Mec Parts",
         "multiTarget": false,
         "oldName": "Hammer",
+        "newName": "Hammer",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1568,6 +1686,7 @@
         "skillType": "Mec Parts",
         "multiTarget": true,
         "oldName": "MicroMissile",
+        "newName": "Micro Missile",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1579,6 +1698,7 @@
         "skillType": "Mec Parts",
         "multiTarget": false,
         "oldName": "Laser",
+        "newName": "Laser",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1594,6 +1714,7 @@
         "skillType": "Mec Parts",
         "multiTarget": false,
         "oldName": "RailCannon",
+        "newName": "Rail Gun",
         "sends": [
           "Down",
           "Instant Stop"
@@ -1604,10 +1725,11 @@
           "Cold"
         ]
       },
-      "AT Missile": {
+      "AT-Missile": {
         "skillType": "Mec Parts",
         "multiTarget": false,
-        "oldName": "AT Missile",
+        "oldName": "AT-Missile",
+        "newName": "AT-Missile",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1624,7 +1746,8 @@
       "KAMIKAZE Crush": {
         "skillType": "Mec Programs",
         "multiTarget": false,
-        "oldName": "KAMIKAZE\n  Crush",
+        "oldName": "KAMIKAZE Crush",
+        "newName": "Divine Might",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1641,6 +1764,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "HypnoFlash",
+        "newName": "Hypnoflash",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1652,6 +1776,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "Jammer",
+        "newName": "Disruptor",
         "sends": [
           "Instant Stop"
         ],
@@ -1661,6 +1786,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "CrossHair",
+        "newName": "Crosshairs",
         "sends": [
           "Instant Stop"
         ],
@@ -1673,7 +1799,8 @@
       "Shoot ALL": {
         "skillType": "Mec Programs",
         "multiTarget": false,
-        "oldName": "Shoot ALL",
+        "oldName": "Shoot-ALL",
+        "newName": "Spray and Pray",
         "sends": [],
         "recieves": []
       },
@@ -1681,6 +1808,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "PluralSlash",
+        "newName": "Multi-slash",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1694,6 +1822,7 @@
         "skillType": "Mec Programs",
         "multiTarget": true,
         "oldName": "Pop-Knight",
+        "newName": "Pop Knight",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1708,6 +1837,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "RangeFire",
+        "newName": "Spread Fire",
         "sends": [
           "Instant Stop"
         ],
@@ -1721,6 +1851,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "HammerCrush",
+        "newName": "Hammer Crush",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1734,10 +1865,11 @@
           "Black Out"
         ]
       },
-      "Shock Soldier": {
+      "ShockSoldier": {
         "skillType": "Mec Programs",
         "multiTarget": true,
-        "oldName": "Shock Soldier",
+        "oldName": "ShockSoldier",
+        "newName": "Shock Soldier",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1753,6 +1885,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "Magnify",
+        "newName": "Magnify",
         "sends": [],
         "recieves": []
       },
@@ -1760,6 +1893,7 @@
         "skillType": "Mec Programs",
         "multiTarget": true,
         "oldName": "MecSonata",
+        "newName": "Mec Sonata",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1773,6 +1907,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "TigerRampage",
+        "newName": "Tiger Rampage",
         "sends": [
           "Instant Stop"
         ],
@@ -1786,6 +1921,7 @@
         "skillType": "Mec Programs",
         "multiTarget": true,
         "oldName": "Maelstrom",
+        "newName": "Maelstrom",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1800,6 +1936,7 @@
         "skillType": "Mec Programs",
         "multiTarget": false,
         "oldName": "LogicBomb",
+        "newName": "Logic Bomb",
         "sends": [
           "Instant Stop"
         ],
@@ -1811,6 +1948,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "Fang",
+        "newName": "Fang",
         "sends": [],
         "recieves": []
       },
@@ -1818,6 +1956,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "BloodSucker",
+        "newName": "Suck Blood",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1831,6 +1970,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "Beak",
+        "newName": "Beak",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1844,6 +1984,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "Hypnotism",
+        "newName": "Hypnosis",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1855,6 +1996,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "DeathGaze",
+        "newName": "Gaze of Death",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1866,6 +2008,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "StoneGaze",
+        "newName": "Petrifying Gaze",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1877,6 +2020,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "Petrify",
+        "newName": "Petrify",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1891,6 +2035,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "DaggerJaw",
+        "newName": "Razor Teeth",
         "sends": [
           "Instant Stop"
         ],
@@ -1903,6 +2048,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "Horn",
+        "newName": "Impale",
         "sends": [
           "Instant Stop"
         ],
@@ -1915,6 +2061,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "FangCrush",
+        "newName": "Feral Pounce",
         "sends": [
           "Instant Stop"
         ],
@@ -1928,6 +2075,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "StunGaze",
+        "newName": "Crippling Gaze",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1939,6 +2087,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "Grasp",
+        "newName": "Swallow",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1952,6 +2101,7 @@
         "skillType": "Monster (Head)",
         "multiTarget": false,
         "oldName": "CharmGaze",
+        "newName": "Charming Gaze",
         "sends": [
           "Dead Stop",
           "Down",
@@ -1965,6 +2115,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "IceSmash",
+        "newName": "Frigid Smash",
         "sends": [
           "Down",
           "Instant Stop",
@@ -1979,6 +2130,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "MadAttack",
+        "newName": "Full-on Assault",
         "sends": [
           "Hot"
         ],
@@ -1992,6 +2144,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "PowerBeat",
+        "newName": "Slam",
         "sends": [
           "Instant Stop"
         ],
@@ -2005,6 +2158,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Kusanagi",
+        "newName": "Kusanagi",
         "sends": [
           "Instant Stop"
         ],
@@ -2018,6 +2172,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "GroundHit",
+        "newName": "Shockwave",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2031,6 +2186,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "GhostTouch",
+        "newName": "Ghostly Touch",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2045,6 +2201,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Chop",
+        "newName": "Chop",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2058,6 +2215,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Feeler",
+        "newName": "Tentacle",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2072,6 +2230,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "TitasWave",
+        "newName": "Titas Wave",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2088,6 +2247,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Beat",
+        "newName": "Bash",
         "sends": [
           "Instant Stop"
         ],
@@ -2097,6 +2257,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "DoubleAxe",
+        "newName": "Double Chop",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2110,6 +2271,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Thrust",
+        "newName": "Thrust",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2123,6 +2285,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Claw",
+        "newName": "Claw",
         "sends": [
           "Instant Stop"
         ],
@@ -2134,6 +2297,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "DeathTouch",
+        "newName": "Touch of Death",
         "sends": [
           "Instant Stop"
         ],
@@ -2143,6 +2307,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "PoisonGrip",
+        "newName": "Poison Strike",
         "sends": [
           "Instant Stop"
         ],
@@ -2154,6 +2319,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Psychout",
+        "newName": "Fakeout",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2165,6 +2331,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Scissors",
+        "newName": "Scissors",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2181,6 +2348,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "StunTouch",
+        "newName": "Paralyzing Touch",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2192,6 +2360,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "HeatSmash",
+        "newName": "Burning Smash",
         "sends": [
           "Down",
           "Instant Stop",
@@ -2206,6 +2375,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "BoomerangHook",
+        "newName": "Boomerang Hook",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2221,6 +2391,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "BrainCrush",
+        "newName": "Head Trauma",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2235,6 +2406,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": false,
         "oldName": "Blade",
+        "newName": "Blade",
         "sends": [
           "Instant Stop"
         ],
@@ -2248,6 +2420,7 @@
         "skillType": "Monster (Arm)",
         "multiTarget": true,
         "oldName": "GaleAttack",
+        "newName": "Windfall",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2265,6 +2438,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "Sweep",
+        "newName": "Sweep",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2276,6 +2450,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "Kick",
+        "newName": "Kick",
         "sends": [
           "Instant Stop"
         ],
@@ -2288,6 +2463,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "GriffithScratch",
+        "newName": "Gryphon Scratch",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2302,6 +2478,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "Tail",
+        "newName": "Tail",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2314,6 +2491,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "Stinger",
+        "newName": "Puncture",
         "sends": [
           "Instant Stop"
         ],
@@ -2326,6 +2504,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "PoisonNeedle",
+        "newName": "Poison Needle",
         "sends": [
           "Instant Stop"
         ],
@@ -2338,6 +2517,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "TailHit",
+        "newName": "Tail Swipe",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2350,6 +2530,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "Feint",
+        "newName": "Feint",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2361,6 +2542,7 @@
         "skillType": "Monster (Leg)",
         "multiTarget": false,
         "oldName": "CentipedeCrush",
+        "newName": "Centipede Crush",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2372,6 +2554,22 @@
           "Hot",
           "Cold"
         ]
+      },
+      "Trample": {
+        "skillType": "Monster (Leg)",
+        "multiTarget": false,
+        "oldName": "Trample",
+        "newName": "Trample",
+        "sends": [
+          "Instant Stop",
+          "Down",
+          "Dead Stop"
+        ],
+        "recieves": [
+          "Move",
+          "Hot",
+          "Cold"
+        ]
       }
     },
     "Monster (Body)": {
@@ -2379,6 +2577,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "GliderSpike",
+        "newName": "Gliding Spikes",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2395,6 +2594,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "SeedVulcan",
+        "newName": "Seed Cannon",
         "sends": [
           "Instant Stop"
         ],
@@ -2407,6 +2607,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": true,
         "oldName": "Oscillation",
+        "newName": "Oscillation",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2421,6 +2622,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Tackle",
+        "newName": "Tackle",
         "sends": [
           "Down",
           "Instant Stop",
@@ -2435,6 +2637,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Wing",
+        "newName": "Wing Slap",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2450,6 +2653,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Dash",
+        "newName": "Charge",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2463,6 +2667,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Needles",
+        "newName": "Needle",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2477,6 +2682,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Headbutt",
+        "newName": "Headbutt",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2492,6 +2698,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Spore",
+        "newName": "Spore",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2505,6 +2712,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": true,
         "oldName": "Stampede",
+        "newName": "Stampede",
         "sends": [
           "Down",
           "Instant Stop",
@@ -2519,6 +2727,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "FireKiss",
+        "newName": "Flames of Passion",
         "sends": [
           "Move"
         ],
@@ -2531,6 +2740,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Coils",
+        "newName": "Windup",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2546,6 +2756,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": true,
         "oldName": "MinionStrike",
+        "newName": "Minion Strike",
         "sends": [
           "Instant Stop"
         ],
@@ -2558,6 +2769,7 @@
         "skillType": "Monster (Body)",
         "multiTarget": false,
         "oldName": "Solvent ",
+        "newName": "Lysate",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2574,6 +2786,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "StinkGas",
+        "newName": "Mustard Gas",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2585,6 +2798,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "FireBreath",
+        "newName": "Blaze",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -2598,6 +2812,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "AcidBreath",
+        "newName": "Acid",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2612,6 +2827,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "GasFlame",
+        "newName": "Scalding Gas",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -2625,6 +2841,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "DeadlyMoss",
+        "newName": "Corpse Moss",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2638,6 +2855,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "WaterCannon",
+        "newName": "Water Cannon",
         "sends": [
           "Move",
           "Cold"
@@ -2652,6 +2870,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "SleepGas",
+        "newName": "Knockout Gas",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2663,6 +2882,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "SphinxRiddle",
+        "newName": "Sphinx's Riddle",
         "sends": [
           "Instant Stop"
         ],
@@ -2672,6 +2892,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "Ink",
+        "newName": "Ink",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2686,6 +2907,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "StoneGas",
+        "newName": "Petrifying Gas",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2699,6 +2921,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "BoltBreath",
+        "newName": "Lightning Pierce",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2713,6 +2936,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "PoisonGun",
+        "newName": "Poisonous Liquid",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2727,6 +2951,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "PoisonGas",
+        "newName": "Poison Gas",
         "sends": [
           "Instant Stop"
         ],
@@ -2738,6 +2963,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "TripGas",
+        "newName": "Debilitating Gas",
         "sends": [
           "Instant Stop"
         ],
@@ -2749,6 +2975,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "BeetleJuice",
+        "newName": "Beetle Juice",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2763,6 +2990,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "FlameBlast",
+        "newName": "Flame Blast",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -2776,6 +3004,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "BoltBlast",
+        "newName": "Lightning Blast",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2790,6 +3019,7 @@
         "skillType": "Monster (Breath)",
         "multiTarget": false,
         "oldName": "ArcticBreath",
+        "newName": "Frost",
         "sends": [
           "Instant Stop",
           "Cold"
@@ -2805,6 +3035,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "Ignis",
+        "newName": "Ignis Stream",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -2819,6 +3050,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "IllStorm",
+        "newName": "Ill Storm",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2829,6 +3061,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Ectoplasnet",
+        "newName": "Ectoplasm Net",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2842,6 +3075,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "ElfShot",
+        "newName": "Sylvan Shot",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2855,6 +3089,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Rock",
+        "newName": "Rockfall",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2869,6 +3104,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "Windblast",
+        "newName": "Gust",
         "sends": [
           "Move",
           "Cold"
@@ -2882,6 +3118,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "GremlinTouch",
+        "newName": "Gremlin Touch",
         "sends": [
           "Instant Stop"
         ],
@@ -2893,6 +3130,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "Siren",
+        "newName": "Siren",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2906,6 +3144,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "SadSong",
+        "newName": "Dirge",
         "sends": [
           "Instant Stop",
           "Cold"
@@ -2916,6 +3155,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "MagneticStorm",
+        "newName": "Magnectic Storm",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2931,6 +3171,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "Quake",
+        "newName": "Earthquake",
         "sends": [],
         "recieves": [
           "Instant Stop",
@@ -2941,6 +3182,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "Tremor",
+        "newName": "Tremor",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2954,6 +3196,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Silf",
+        "newName": "Sylphid",
         "sends": [
           "Instant Stop",
           "Cold"
@@ -2968,6 +3211,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Scream",
+        "newName": "Scream",
         "sends": [
           "Down",
           "Instant Stop"
@@ -2981,6 +3225,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "SpiderNet",
+        "newName": "Spider Net",
         "sends": [
           "Dead Stop",
           "Down",
@@ -2994,6 +3239,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Spoil",
+        "newName": "Degeneration",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3006,6 +3252,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "SacredSong",
+        "newName": "Hymn",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3020,6 +3267,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "HPDrain",
+        "newName": "Drain HP",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3033,6 +3281,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Flash",
+        "newName": "Brilliance",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3044,6 +3293,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Tornado",
+        "newName": "Cyclone",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3062,6 +3312,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Supersonic",
+        "newName": "Ultrasonic Waves",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3075,6 +3326,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "PoisonMist",
+        "newName": "Poison Mist",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3085,6 +3337,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "BattleSong",
+        "newName": "Battle Song",
         "sends": [
           "Hot"
         ],
@@ -3094,6 +3347,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "HeatWave",
+        "newName": "Heat Wave",
         "sends": [
           "Move",
           "Hot"
@@ -3103,10 +3357,11 @@
           "Cold"
         ]
       },
-      "Pheremone": {
+      "Pheromone": {
         "skillType": "Monster (Magical)",
         "multiTarget": false,
-        "oldName": "Pheremone",
+        "oldName": "Pheromone",
+        "newName": "Pheromone",
         "sends": [
           "Instant Stop"
         ],
@@ -3116,6 +3371,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "BladeNet",
+        "newName": "Blade Net",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3130,6 +3386,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "PainPowder",
+        "newName": "Pain Powder",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3145,6 +3402,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "MightyCyclone",
+        "newName": "Mighty Cyclone",
         "sends": [
           "Instant Stop"
         ],
@@ -3158,6 +3416,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "Maelstrom",
+        "newName": "Maelstrom",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3172,6 +3431,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Seduction",
+        "newName": "Temptation",
         "sends": [
           "Instant Stop"
         ],
@@ -3181,6 +3441,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": true,
         "oldName": "LightBall",
+        "newName": "Light Ball",
         "sends": [
           "Instant Stop"
         ],
@@ -3192,6 +3453,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Thunderbolt",
+        "newName": "Lightning Crash",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3207,6 +3469,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "Lullaby",
+        "newName": "Lullaby",
         "sends": [
           "Instant Stop"
         ],
@@ -3216,6 +3479,7 @@
         "skillType": "Monster (Magical)",
         "multiTarget": false,
         "oldName": "QuickSand",
+        "newName": "Qucksand",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3230,6 +3494,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "Needle",
+        "newName": "Nettles",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3243,6 +3508,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "Lance",
+        "newName": "Lance",
         "sends": [
           "Instant Stop"
         ],
@@ -3255,6 +3521,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "BloodSucker",
+        "newName": "Bloodsucker",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3268,6 +3535,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "Blade",
+        "newName": "Blade",
         "sends": [
           "Instant Stop"
         ],
@@ -3281,6 +3549,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "GremlinEffect",
+        "newName": "Gremlin Effect",
         "sends": [
           "Instant Stop"
         ],
@@ -3292,6 +3561,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "Hypnotism",
+        "newName": "Hypnosis",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3303,6 +3573,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "FireBreath",
+        "newName": "Blaze",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -3316,6 +3587,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": true,
         "oldName": "Oscillation",
+        "newName": "Oscillation",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3330,6 +3602,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "PsyNet",
+        "newName": "Psy-Net",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3341,6 +3614,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "HeatSmash",
+        "newName": "Burning Smash",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3355,6 +3629,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "GriffithScratch",
+        "newName": "Gryphon Strike",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3369,6 +3644,7 @@
         "skillType": "Mystic Sword",
         "multiTarget": false,
         "oldName": "Flash",
+        "newName": "Flash",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3382,6 +3658,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "WaterCannon",
+        "newName": "Water Cannon",
         "sends": [
           "Move",
           "Cold"
@@ -3396,6 +3673,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "DeadlyPowder",
+        "newName": "Deadly Powder",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3409,6 +3687,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "Spoil",
+        "newName": "Degeneration",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3419,6 +3698,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "PoisonusBlow",
+        "newName": "Venomous Blow",
         "sends": [
           "Instant Stop"
         ],
@@ -3432,6 +3712,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "Feeler",
+        "newName": "Tentacle",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3445,6 +3726,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "Psych-out",
+        "newName": "Fake Out",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3456,6 +3738,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "SpreadBlaster",
+        "newName": "Spread Blaster",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3472,6 +3755,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "HellWing",
+        "newName": "Hellwing",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3487,6 +3771,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "GrapeShot",
+        "newName": "Grape Shot",
         "sends": [
           "Instant Stop"
         ],
@@ -3499,6 +3784,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "ArcticBreath",
+        "newName": "Frost",
         "sends": [
           "Instant Stop",
           "Cold"
@@ -3512,6 +3798,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "IceSmash",
+        "newName": "Frigid Smash",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3526,6 +3813,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "Crystalizer",
+        "newName": "Crystalizer",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3540,6 +3828,7 @@
         "skillType": "Mystic Glove",
         "multiTarget": false,
         "oldName": "TigerRampage",
+        "newName": "Tiger Rampage",
         "sends": [
           "Instant Stop"
         ],
@@ -3555,6 +3844,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "Sweep",
+        "newName": "Sweep",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3566,6 +3856,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "PowerKick",
+        "newName": "Power Kick",
         "sends": [
           "Instant Stop"
         ],
@@ -3578,6 +3869,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "ThunderBall",
+        "newName": "Lightning Orb",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3592,6 +3884,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "BladeNet",
+        "newName": "Blade Net",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3607,6 +3900,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "Spiders",
+        "newName": "Spiders",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3620,6 +3914,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "Suffocation",
+        "newName": "Suffocation",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3631,6 +3926,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": true,
         "oldName": "Tremor",
+        "newName": "Tremor",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3644,6 +3940,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "MysteryTap",
+        "newName": "Mystery Tap",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3655,6 +3952,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "QuickSand",
+        "newName": "Quicksand",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3667,6 +3965,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "ThunderBolt",
+        "newName": "Lightning Crash",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3678,10 +3977,11 @@
           "Cold"
         ]
       },
-      "Assasinate": {
+      "Assassinate": {
         "skillType": "Mystic Boots",
         "multiTarget": false,
-        "oldName": "Assasinate",
+        "oldName": "Assassinate",
+        "newName": "Assassinate",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3695,6 +3995,7 @@
         "skillType": "Mystic Boots",
         "multiTarget": false,
         "oldName": "TitasWave",
+        "newName": "Titas Wave",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3709,10 +4010,11 @@
       }
     },
     "Light Magic": {
-      "Sunray": {
+      "SunRay": {
         "skillType": "Light Magic",
         "multiTarget": false,
-        "oldName": "Sunray",
+        "oldName": "SunRay",
+        "newName": "Sunray",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3727,6 +4029,7 @@
         "skillType": "Light Magic",
         "multiTarget": true,
         "oldName": "FlashFire",
+        "newName": "Flash Fire",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3741,6 +4044,7 @@
         "skillType": "Light Magic",
         "multiTarget": false,
         "oldName": "FlashFlood",
+        "newName": "Flash Flood",
         "sends": [
           "Instant Stop"
         ],
@@ -3750,6 +4054,7 @@
         "skillType": "Light Magic",
         "multiTarget": true,
         "oldName": "MegaWindblast",
+        "newName": "Gale Blast",
         "sends": [
           "Dead Stop",
           "Move",
@@ -3766,6 +4071,7 @@
         "skillType": "Shadow Magic",
         "multiTarget": false,
         "oldName": "PowerGrab",
+        "newName": "Power Grab",
         "sends": [
           "Instant Stop"
         ],
@@ -3775,6 +4081,7 @@
         "skillType": "Shadow Magic",
         "multiTarget": false,
         "oldName": "Hidebehind",
+        "newName": "Hide Behind",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3789,6 +4096,7 @@
         "skillType": "Shadow Magic",
         "multiTarget": true,
         "oldName": "ShadowNet",
+        "newName": "Shadow Net",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3804,6 +4112,7 @@
         "skillType": "Shadow Magic",
         "multiTarget": false,
         "oldName": "DarkSphere",
+        "newName": "Dark Sphere",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3824,6 +4133,7 @@
         "skillType": "Space Magic",
         "multiTarget": false,
         "oldName": "VaporBlast",
+        "newName": "Vapor Blast",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3838,6 +4148,7 @@
         "skillType": "Space Magic",
         "multiTarget": false,
         "oldName": "Vanish",
+        "newName": "Vanish",
         "sends": [],
         "recieves": []
       },
@@ -3845,6 +4156,7 @@
         "skillType": "Space Magic",
         "multiTarget": true,
         "oldName": "ReverseGravity",
+        "newName": "Reverse Gravity",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3858,6 +4170,7 @@
         "skillType": "Space Magic",
         "multiTarget": false,
         "oldName": "Vortex",
+        "newName": "Vortex",
         "sends": [],
         "recieves": []
       }
@@ -3867,6 +4180,7 @@
         "skillType": "Time Magic",
         "multiTarget": false,
         "oldName": "DelayOrder",
+        "newName": "Delay Order",
         "sends": [
           "Instant Stop"
         ],
@@ -3876,6 +4190,7 @@
         "skillType": "Time Magic",
         "multiTarget": false,
         "oldName": "TimeLeap",
+        "newName": "Time Leap",
         "sends": [],
         "recieves": []
       },
@@ -3883,6 +4198,7 @@
         "skillType": "Time Magic",
         "multiTarget": true,
         "oldName": "ChaosStream",
+        "newName": "Chaos Stream",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3901,6 +4217,7 @@
         "skillType": "Time Magic",
         "multiTarget": false,
         "oldName": "TimeEclipse",
+        "newName": "Time Eclipse",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3918,6 +4235,7 @@
         "skillType": "Realm Magic",
         "multiTarget": false,
         "oldName": "EnergyChain",
+        "newName": "Energy Chain",
         "sends": [
           "Down",
           "Instant Stop"
@@ -3932,6 +4250,7 @@
         "skillType": "Realm Magic",
         "multiTarget": false,
         "oldName": "Implosion",
+        "newName": "Implosion",
         "sends": [
           "Instant Stop",
           "Hot"
@@ -3946,6 +4265,7 @@
         "skillType": "Realm Magic",
         "multiTarget": false,
         "oldName": "PsychicPrison",
+        "newName": "Psychic Prison",
         "sends": [],
         "recieves": []
       },
@@ -3953,6 +4273,7 @@
         "skillType": "Realm Magic",
         "multiTarget": true,
         "oldName": "VermilionSand",
+        "newName": "Vermilion Sands",
         "sends": [
           "Down",
           "Instant Stop",
@@ -3971,6 +4292,7 @@
         "skillType": "Mystic Magic",
         "multiTarget": false,
         "oldName": "Fascination",
+        "newName": "Fascination",
         "sends": [],
         "recieves": []
       },
@@ -3978,6 +4300,7 @@
         "skillType": "Mystic Magic",
         "multiTarget": false,
         "oldName": "PhantasmShot",
+        "newName": "Phantasm Shot",
         "sends": [
           "Dead Stop",
           "Down",
@@ -3994,16 +4317,18 @@
         "skillType": "Mind Magic",
         "multiTarget": false,
         "oldName": "Spellbound",
+        "newName": "Spellbind",
         "sends": [
           "Down",
           "Instant Stop"
         ],
         "recieves": []
       },
-      "LifeWave": {
+      "Lifewave": {
         "skillType": "Mind Magic",
         "multiTarget": false,
-        "oldName": "LifeWave",
+        "oldName": "Lifewave",
+        "newName": "Lifewave",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4021,6 +4346,7 @@
         "skillType": "Evil Magic",
         "multiTarget": false,
         "oldName": "RavaShot",
+        "newName": "Ravaging Shot",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4036,6 +4362,7 @@
         "skillType": "Evil Magic",
         "multiTarget": true,
         "oldName": "PainDoubler",
+        "newName": "Pain Doubler",
         "sends": [
           "Down",
           "Instant Stop",
@@ -4049,6 +4376,7 @@
         "skillType": "Evil Magic",
         "multiTarget": false,
         "oldName": "DeathCurse",
+        "newName": "Curse of Death",
         "sends": [],
         "recieves": []
       },
@@ -4056,6 +4384,7 @@
         "skillType": "Evil Magic",
         "multiTarget": true,
         "oldName": "SharpPain",
+        "newName": "Sharp Pain",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4072,6 +4401,7 @@
         "skillType": "Arcane Magic",
         "multiTarget": false,
         "oldName": "Saber",
+        "newName": "Saber",
         "sends": [
           "Down",
           "Instant Stop"
@@ -4085,6 +4415,7 @@
         "skillType": "Arcane Magic",
         "multiTarget": false,
         "oldName": "Gold",
+        "newName": "Gold",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4096,6 +4427,7 @@
         "skillType": "Arcane Magic",
         "multiTarget": false,
         "oldName": "Death",
+        "newName": "Death",
         "sends": [],
         "recieves": []
       },
@@ -4103,6 +4435,7 @@
         "skillType": "Arcane Magic",
         "multiTarget": false,
         "oldName": "Tower",
+        "newName": "Tower",
         "sends": [
           "Down",
           "Instant Stop",
@@ -4119,7 +4452,7 @@
       "DwarfRune": {
         "skillType": "Rune Magic",
         "multiTarget": false,
-        "oldName": "DwarfRune",
+        "oldName": "Dwarf Rune",
         "sends": [],
         "recieves": []
       },
@@ -4127,6 +4460,7 @@
         "skillType": "Rune Magic",
         "multiTarget": false,
         "oldName": "StasisRune",
+        "newName": "Stasis Rune",
         "sends": [],
         "recieves": []
       }
@@ -4136,6 +4470,7 @@
         "skillType": "Mirage Magic",
         "multiTarget": false,
         "oldName": "BlackCat",
+        "newName": "Black Cat",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4150,6 +4485,7 @@
         "skillType": "Mirage Magic",
         "multiTarget": false,
         "oldName": "Nightmare",
+        "newName": "Nightmare",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4164,6 +4500,7 @@
         "skillType": "Mirage Magic",
         "multiTarget": false,
         "oldName": "Jackal",
+        "newName": "Jackal",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4178,6 +4515,7 @@
         "skillType": "Mirage Magic",
         "multiTarget": false,
         "oldName": "Cockatrice",
+        "newName": "Cockatrice",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4192,6 +4530,7 @@
         "skillType": "Mirage Magic",
         "multiTarget": false,
         "oldName": "Reaper",
+        "newName": "Reaper",
         "sends": [
           "Dead Stop",
           "Down",
@@ -4204,47 +4543,52 @@
       }
     },
     "Consumable Items": {
-      "*UnluckyCoin*": {
+      "UnluckyCoin": {
         "skillType": "Consumable Items",
         "multiTarget": false,
-        "oldName": "*UnluckyCoin*",
+        "oldName": "UnluckyCoin",
+        "newName": "Unlucky Coin",
         "sends": [],
         "recieves": []
       },
-      "*RottenMeat*": {
+      "RottenMeat": {
         "skillType": "Consumable Items",
         "multiTarget": false,
-        "oldName": "*RottenMeat*",
+        "oldName": "RottenMeat",
+        "newName": "Rotten Meat",
         "sends": [
           "Down",
           "Instant Stop"
         ],
         "recieves": []
       },
-      "*MagicStone*": {
+      "MagicStone": {
         "skillType": "Consumable Items",
         "multiTarget": false,
-        "oldName": "*MagicStone*",
+        "oldName": "MagicStone",
+        "newName": "Elemental Focus",
         "sends": [
           "Down",
           "Instant Stop"
         ],
         "recieves": []
       },
-      "*FlashBomb*": {
+      "FlashBomb": {
         "skillType": "Consumable Items",
         "multiTarget": false,
-        "oldName": "*FlashBomb*",
+        "oldName": "FlashBomb",
+        "newName": "Flash Bomb",
         "sends": [
           "Down",
           "Instant Stop"
         ],
         "recieves": []
       },
-      "*StunNeedle*": {
+      "StunNeedle": {
         "skillType": "Consumable Items",
         "multiTarget": false,
-        "oldName": "*StunNeedle*",
+        "oldName": "StunNeedle",
+        "newName": "Paralyzing Needle",
         "sends": [
           "Down",
           "Instant Stop"

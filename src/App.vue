@@ -27,6 +27,16 @@
       Information presented in this tool was obtained from this document:
       The information from that document is copyright x 2009
     </p>
+    <p>
+      https://saga.fandom.com/wiki/SaGa_Frontier_Techniques
+      skill names from here
+
+      https://gamefaqs.gamespot.com/boards/198537-saga-frontier/79409430
+
+      Skill and item names taken from this mod:https://gamefaqs.gamespot.com/boards/198537-saga-frontier/79726629
+      
+      https://essenceofsaga.wordpress.com/home/name-comparisons/weapons/#Heavy_Weapons
+    </p>
     
     <p>
       Icons were grabbed from this sprite sheet: 
