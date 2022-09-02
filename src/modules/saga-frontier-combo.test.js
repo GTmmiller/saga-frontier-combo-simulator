@@ -56,9 +56,9 @@ describe('Skill Class', () => {
          expect(multiSkill.canRecieveCombo(forwardSkill)).toBe(true)
     })
 
-    test('a multitarget skill cannot sent a combo', () => {
-        expect(multiSkill.canSendCombo(forwardSkill)).toBe(false)
-        expect(forwardSkill.canRecieveCombo(multiSkill)).toBe(false)
+    test('a multitarget skill can sent a combo', () => {
+        expect(multiSkill.canSendCombo(forwardSkill)).toBe(true)
+        expect(forwardSkill.canRecieveCombo(multiSkill)).toBe(true)
     })
 
     test('can be created with a json object', () => {
@@ -91,43 +91,32 @@ describe('Skill Class', () => {
 })
 
 describe('Combo Class', () => {
-    let combo;
-
-    beforeEach( () => {
-        combo = new Combo()
-    })
 
     test('Combos can be constructed', () => {
-        expect(combo).toBeTruthy()
+        expect(new Combo()).toBeTruthy()
     })
 
     test('No possible combos makes blank array', () => {
-        combo.setSkill(0, newSkill)
-        combo.setSkill(1, newSkill)
-        combo.setSkill(2, newSkill)
-        combo.setSkill(3, newSkill)
-        combo.setSkill(4, newSkill)
+        const combo = Combo.fromArray([newSkill, newSkill, newSkill, newSkill, newSkill])
         expect(combo.getCombos()).toStrictEqual([])
     })
 
     // Make a placeholder skill
     test('Blank combo should have no combos', () => {
-        expect(combo.getCombos()).toStrictEqual([])
+        expect(new Combo().getCombos()).toStrictEqual([])
     })
 
     test('Should detect a small combo', () => {
-        combo.setSkill(0, newSkill)
-        combo.setSkill(1, forwardSkill)
+        const combo = Combo.fromArray([newSkill, forwardSkill])
         expect(combo.getCombos()).toStrictEqual([
             {start: 0, end: 1, level: 2}
         ])
     })
 
     test('Should detect multiple combos', () => {
-        combo.setSkill(0, newSkill)
-        combo.setSkill(1, forwardSkill)
-        combo.setSkill(2, newSkill)
-        combo.setSkill(3, forwardSkill)
+        const combo = Combo.fromArray(
+            [newSkill, forwardSkill, newSkill, forwardSkill]
+        )
         expect(combo.getCombos()).toStrictEqual(
             [
                 {start: 0, end: 1, level: 2},
@@ -137,17 +126,16 @@ describe('Combo Class', () => {
     })
 
     test('Should detect a continuous combo', () => {
-        combo.setSkill(0, forwardSkill)
-        combo.setSkill(1, forwardSkill)
-        combo.setSkill(2, forwardSkill)
-        combo.setSkill(3, forwardSkill)
-        combo.setSkill(4, multiSkill)
+        const combo = Combo.fromArray(
+            [forwardSkill, forwardSkill, forwardSkill, forwardSkill, multiSkill]
+        )
         expect(combo.getCombos()).toStrictEqual([
             {start: 0, end: 4, level: 5}
         ])
     })
 
     test('can iterate using iterator', () => {
+        const combo = new Combo()
         let count = 0
         for(const skill of combo) {
             expect(skill).toEqual(PLACEHOLDER_SKILL)
@@ -156,4 +144,99 @@ describe('Combo Class', () => {
         expect(count).toEqual(combo.getLength())
     })
     
+})
+
+describe("Real Skill Combos", () => {
+    const realSkills = Skill.skillsFromJson(jsonSkills)
+
+    // Two skill combo
+    test('Simple two skill combo', () => {
+        const combo = Combo.fromArray([
+            realSkills["Martial Arts"].AirThrow, 
+            realSkills.Sword.BearCrush])
+        expect(combo.getCombos()).toStrictEqual([
+            {start:0, end:1, level:2}
+        ])
+    })
+
+    // Test attack all invalid combo level 2
+    test('Attack all invalid combo level 2', () => {
+        const combo = Combo.fromArray(
+            [
+                realSkills.Sword.RisingNova,
+                realSkills.Sword["Haze-to-Wheel"]
+            ]
+        )
+        expect(combo.getCombos()).toStrictEqual([])
+    })
+
+    // Test attack all valid combo level 2
+    test('Attack all valid combo level 2', () => {
+        const combo = Combo.fromArray([
+            realSkills.Sword["Haze-to-Wheel"],
+            realSkills.Sword.Smash
+        ])
+        expect(combo.getCombos()).toStrictEqual(
+            [
+                {start: 0, end:1, level: 2} 
+            ]
+        )
+    })
+
+    // Test attack all invalid combo level 3
+    test('Attack all invalid combo level 3', () => {
+        const combo = Combo.fromArray([
+            realSkills["Monster (Body)"].Oscillation,
+            realSkills.Gun.TotalShot,
+            realSkills.Sword.HardSlash
+        ])
+        expect(combo.getCombos()).toStrictEqual(
+            [
+                {start:1, end: 2, level: 2}
+            ]
+        )
+    })
+
+    // Test attack all valid combol level 3
+    test('Attack all valid combo level 3', () => {
+        const combo = Combo.fromArray([
+            realSkills.Sword.HeadWind,
+            realSkills["Martial Arts"].RollingCradle,
+            realSkills["Light Magic"].MegaWindblast
+        ])
+        expect(combo.getCombos()).toStrictEqual([
+            {start: 0, end: 2, level: 3}
+        ])
+    })
+
+    // Test attack all valid level 4
+    test('Attack all valid combo level 4', () => {
+        const combo = Combo.fromArray([
+            realSkills["Mec Programs"]["Pop-Knight"],
+            realSkills["Heavy Weapons"].HyperionBazooka,
+            realSkills.Gun.BoundShot,
+            realSkills["Heavy Weapons"].Blaster
+        ])
+        expect(combo.getCombos()).toStrictEqual(
+            [
+                {start: 0, end: 3, level: 4}
+            ]
+        )
+    })
+
+
+    // Test attack all valid level 5
+    test('Attack all valid combo level 5', () => {
+        // headwind - rolling cradle - mega windblast
+        const combo = Combo.fromArray([
+            realSkills["Mec Parts"].CosmicRave,
+            realSkills["Light Magic"].MegaWindblast,
+            realSkills.Sword.LifeSprinkler,
+            realSkills.Sword.RisingNova,
+            realSkills.Sword.LifeSprinkler
+        ])
+        expect(combo.getCombos()).toStrictEqual([
+            {start: 0, end: 4, level: 5}
+        ])
+    })
 })

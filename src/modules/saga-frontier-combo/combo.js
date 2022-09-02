@@ -1,17 +1,9 @@
 import { PLACEHOLDER_SKILL } from "./skills"
 
-// TODO: future - Add a permutation function
-
 // Idea here is we have 5 slots in the combo and the combo outputs
 // What would happen if all the turns were taken "left to right"
 
 // TODO: Add an array taking constructor
-
-// TODO: put in same file or folder with skills
-
-// TODO: make a placeholder skill
-
-// TODO: make iterable
 
 
 // [1] -> [2] -> [3] -> etc
@@ -43,8 +35,7 @@ export class Combo {
         let combos = []
         let currentCombo = null
 
-        // Lookahead instead
-
+        // Create possible combos
         for(let i = 0; i < this.skillArray.length - 1; i++) {
             let currentSkill = this.skillArray[i]
             let nextSkill = this.skillArray[i + 1]
@@ -69,11 +60,13 @@ export class Combo {
             currentCombo = null
         }
 
-        return combos
+        // Filter impossible 2 combos
+
+        
+        return combos.filter( (combo) => combo.level !== 2 || !this.getSkill(combo.end).multiTarget )
     }
 
     setSkill(index, skill) {
-        // TODO: make safer
         this.skillArray[index] = skill
     }
 
@@ -87,6 +80,14 @@ export class Combo {
 
     [Symbol.iterator] () {
         return this.skillArray[Symbol.iterator]()
+    }
+
+    static fromArray(comboArray) {
+        const newCombo = new Combo()
+        for (let i = 0; i < Math.min(5, comboArray.length); i++) {
+            newCombo.setSkill(i, comboArray[i])
+        }
+        return newCombo
     }
 
 }

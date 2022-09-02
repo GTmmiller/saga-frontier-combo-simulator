@@ -97,20 +97,28 @@ export class Skill {
 
     /**
      * Checks if a skill will combo if performed immediately after this skill
+     * Note: This does not consider combo-wide multitarget behavior
+     * 
      * @param {Skill} nextSkill - The skill to follow the current skill
      * @returns True if the passed in skill will combo. False if it won't.
      */
     canSendCombo(nextSkill) {
-        return (this.multiTarget === false) && (this.sends.intersect(nextSkill.recieves).count() > 0)
+        const compatible = this.sends.intersect(nextSkill.recieves).count() > 0
+        const doubleMultitarget = this.multiTarget && nextSkill.multiTarget
+        return compatible && !doubleMultitarget
     }
 
     /**
      * Checks if a skill that was activated previously would cause this skill to combo
+     * Note: This does not consider combo-wide multitarget behavior
+     * 
      * @param {Skill} previousSkill - The skill performed on the previous turn
      * @returns True if this skill would combo with the previous skill
      */
     canRecieveCombo(previousSkill) {
-        return (previousSkill.multiTarget === false) && (this.recieves.intersect(previousSkill.sends).count() > 0)
+        const compatible = this.recieves.intersect(previousSkill.sends).count() > 0
+        const doubleMultitarget = this.multiTarget && previousSkill.multiTarget
+        return compatible && !doubleMultitarget
     }
 
     static fromJson(jsonObject) {
@@ -123,6 +131,26 @@ export class Skill {
             jsonObject.multiTarget
         )
     }
+
+    /**
+     * Converts a category-separated json payload of skills into skill objects
+     * 
+     * @param {Object} jsonSkills - The json payload with the format {SkillType => {SkillName => Skill}}
+     * @returns A frozen object containing Skill objects instead of json skill objects
+     */
+    static skillsFromJson(jsonSkills) {
+        return Object.freeze(
+            Object.fromEntries(
+              Object.entries(jsonSkills).map( ([skillType, skills]) => {
+                const newSkills = Object.fromEntries( 
+                  Object.entries(skills).map(([oldName, skill]) => [oldName, Skill.fromJson(skill)])
+                )
+                return [skillType, newSkills]
+              })
+            )
+        )
+    }
+    
 }
 
 export const PLACEHOLDER_SKILL = new Skill("No Skill Selected", "No Skill Selected", "Sword", Set(), Set(), false)

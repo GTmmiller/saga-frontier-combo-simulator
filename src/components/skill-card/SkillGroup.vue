@@ -12,7 +12,7 @@
         v-for="(menuSkill, skillKey) in skillList" :key="skillKey"
         :class="{'is-active': selectedSkill.oldName === menuSkill.oldName}"
         @click="selectSkill(menuSkill)">
-        {{menuSkill.getName(remasteredNames)}}
+      <SkillName :skill="menuSkill" :remasteredNames="remasteredNames" />
     </a>
   </div>
   <hr class="dropdown-divider" v-if="drawDivider && !hideSkills"/>
@@ -21,8 +21,13 @@
 <script>
 import {Skill} from '../../modules/saga-frontier-combo'
 
+import SkillName from './SkillName.vue'
+
 export default {
   name: 'SkillGroup',
+  components: {
+    SkillName
+  },
   data() {
     return {
       hideSkills: true

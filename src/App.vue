@@ -41,6 +41,8 @@
       Skill and item names taken from this mod:https://gamefaqs.gamespot.com/boards/198537-saga-frontier/79726629
       
       https://essenceofsaga.wordpress.com/home/name-comparisons/weapons/#Heavy_Weapons
+    
+      testing combos: https://www.neoseeker.com/saga-frontier/faqs/32730-combo-a.html
     </p>
     
     <p>
@@ -71,7 +73,7 @@ export default {
   data() {
     let combo = new Combo()
     
-    const skills = this.skillsFromJson(jsonSkills)
+    const skills = Skill.skillsFromJson(jsonSkills)
 
     return {
       combo,
@@ -98,18 +100,6 @@ export default {
   methods: {
     handleSkillSelect(payload) {
       this.combo.setSkill(payload.index, this.skills[payload.skillType][payload.oldName])
-    },
-    skillsFromJson(jsonSkills) {
-      return Object.freeze(
-        Object.fromEntries(
-          Object.entries(jsonSkills).map( ([skillType, skills]) => {
-            const newSkills = Object.fromEntries( 
-              Object.entries(skills).map(([oldName, skill]) => [oldName, Skill.fromJson(skill)])
-            )
-            return [skillType, newSkills]
-          })
-        )
-      )
     }
   }
 }

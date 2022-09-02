@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 
 import App from './App.vue'
 
-describe('Top-Level App', () => {
+describe.skip('Top-Level App', () => {
     beforeEach( () => {
         render(App)
     })

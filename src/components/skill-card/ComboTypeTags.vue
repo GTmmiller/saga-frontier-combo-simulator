@@ -1,5 +1,5 @@
 <template>
-  <div class="tags">
+  <div class="tags is-centered">
     <span class="tag" v-for="comboType in comboTypes" :key="comboType"
       :class="tagClasses(comboType)">
       {{comboType.toString()}}

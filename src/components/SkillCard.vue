@@ -1,12 +1,12 @@
 <template>
   <div class="box">
-    <div class="dropdown"
+    <div class="dropdown block"
       :class="{'is-active': dropDownActive}">
       <div class="dropdown-trigger">
         <button class="button" @click="dropDownActive = !dropDownActive">
-          <span>{{skill.getName(remasteredNames)}}</span>
+          <SkillName :skill="skill" :remasteredNames="remasteredNames" />
           <span class="icon is-small">
-            <i class="fas fa-angle-down"></i>
+            <font-awesome-icon icon="fa-solid fa-angle-down" />
           </span>
         </button>
       </div>
@@ -35,13 +35,18 @@
         </div>
       </div>
     </div>
-    <div class="columns">
-      <div class="column">
-        *
+
+    <div class="columns block" v-if="skill.sends.size !== 0 || skill.recieves.size !== 0">
+      <div class="column has-text-centered">
+        <span class="icon is-small">
+          <font-awesome-icon icon="fa-solid fa-bullseye" />
+        </span>
         <ComboTypeTags :comboTypes="skill.recieves" />
       </div>
-      <div class="column">
-        ->
+      <div class="column has-text-centered">
+        <span class="icon is-small">
+          <font-awesome-icon icon="fa-solid fa-arrow-right" />
+        </span>
         <ComboTypeTags :comboTypes="skill.sends" />
       </div>
     </div>
@@ -53,12 +58,14 @@ import {Skill} from '../modules/saga-frontier-combo'
 
 import SkillGroup from './skill-card/SkillGroup.vue'
 import ComboTypeTags from './skill-card/ComboTypeTags.vue'
+import SkillName from './skill-card/SkillName.vue'
 
 export default {
   name: 'SkillCard',
   components: {
     SkillGroup,
-    ComboTypeTags
+    ComboTypeTags,
+    SkillName
   },
   data() {
     return {
