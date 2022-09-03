@@ -1,12 +1,22 @@
 <template>
-  <div class="container">
-    <h1 class="title">Combo Simulator</h1>
-    <label class="checkbox">
-      <input type="checkbox" v-model.lazy="remasteredNames" />
-      Remastered Names
-    </label>
-    <div class="columns is-vcentered">
-      
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <p class="title">
+        SaGa Frontier Combo Simulator
+      </p>
+    </div>
+  </section>
+
+  <div class="container block">
+    <div class="block">
+      <label class="checkbox">
+        <input type="checkbox" v-model.lazy="remasteredNames" />
+        Remastered Names
+      </label>
+    </div>
+
+    <div class="columns is-vcentered">  
       <template v-for="(skill, index) in combo" :key="index">
         <div class="column px-0">
           <SkillCard 
@@ -28,30 +38,56 @@
   </div>
 
   <footer class="footer">
-    <p>
-      Information presented in this tool was obtained from this document:
-      The information from that document is copyright x 2009
-    </p>
-    <p>
-      https://saga.fandom.com/wiki/SaGa_Frontier_Techniques
-      skill names from here
+    <div class="content">
+    <p>Source code for this website is licenced with Apache 2.0</p>
+    <p>Data about the skills can be used freely</p>
 
-      https://gamefaqs.gamespot.com/boards/198537-saga-frontier/79409430
+    <p>Information for this tool was found in the following sources</p>
+    <ul>
+      <li>
+        <a href="http://sf.data.project.tripod.com/Zaraktheus/Combo_Data_Export.htm">
+          Combo data and explaination
+        </a> by Henry (Hank) Jones
+      </li>
+      <li>
+        <a href="https://web.archive.org/web/20190627033802/http://uri.sakura.ne.jp/~saga/sf1/neta/combo_st.html">
+          Japanese source for how Combos Work
+        </a> by リュート16たーぼさん
+      </li>
+      <li>
+        <a href="https://web.archive.org/web/20190519040045/http://www.uri.sakura.ne.jp/~saga/sf1/wazajutu/combo_st.html">
+          Japanese skill and Combo type list
+        </a> by リュート16たーぼさん
+      </li>
+      <li>
+        <a href="https://essenceofsaga.wordpress.com/home/book-index/combo-system/">
+          Translation of Kyoji Koizumi (Battle System Director)'s explaination of the Combo system
+        </a> by Sevon
+      </li>
+      <li>
+        <a href="https://essenceofsaga.wordpress.com/home/name-comparisons/">
+          Skill names from the original English translation and from SaGa Frontier Remastered
+        </a> by Sevon
+      </li>
+      <li>
+        <a href="https://www.neoseeker.com/saga-frontier/faqs/32730-combo-a.html">
+          Combos used to test the simulator
+        </a> by Shippu
+      </li>
+      <li>
+        <a href="https://www.spriters-resource.com/playstation/sagafrontier/sheet/54217/">
+          Sprite Sheet used to create the favicon for this site
+        </a> by Reichu
+      </li>
+    </ul>
 
-      Skill and item names taken from this mod:https://gamefaqs.gamespot.com/boards/198537-saga-frontier/79726629
-      
-      https://essenceofsaga.wordpress.com/home/name-comparisons/weapons/#Heavy_Weapons
-    
-      testing combos: https://www.neoseeker.com/saga-frontier/faqs/32730-combo-a.html
-    </p>
-    
     <p>
-      Icons were grabbed from this sprite sheet: 
+      This is a fan work created without the intention of profit
     </p>
-
     <p>
-      The SaGa series, SaGa frontier and SaGa Frontier remastered are all copywritten to Square Enix
+      The SaGa series, SaGa frontier and SaGa Frontier Remastered are all owned by Square Enix.
     </p>
+    </div>
   </footer>
 
 </template>
