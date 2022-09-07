@@ -97,6 +97,26 @@ describe("Skill Class", () => {
       new Skill("badSkill", "badSkill", "Sword", [], ["HotDog"], false);
     }).toThrow("Unknown combo type in recieves array. recieves: " + ["HotDog"]);
   });
+
+  test("A skill with the same combo type in send and receives should self combo", () => {
+    expect(forwardSkill.canSelfCombo()).toBeTruthy();
+  });
+
+  test("A skill that would self combo but is a multitarget skill should not self combo", () => {
+    expect(multiSkill.canSelfCombo()).toBeFalsy();
+  });
+
+  test("PopKnight should not self combo because it's multitarget", () => {
+    expect(
+      Skill.fromJson(jsonSkills["Mec Programs"]["Pop-Knight"]).canSelfCombo()
+    ).toBeFalsy();
+  });
+
+  test("DarkSphere should self combo", () => {
+    expect(
+      Skill.fromJson(jsonSkills["Shadow Magic"].DarkSphere).canSelfCombo()
+    ).toBeTruthy();
+  });
 });
 
 describe("Combo Class", () => {

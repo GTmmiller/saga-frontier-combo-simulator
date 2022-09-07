@@ -120,6 +120,10 @@ export class Skill {
     return compatible && !doubleMultitarget;
   }
 
+  canSelfCombo() {
+    return this.sends.intersect(this.recieves).size > 0 && !this.multiTarget;
+  }
+
   static fromJson(jsonObject) {
     return new Skill(
       jsonObject.newName,

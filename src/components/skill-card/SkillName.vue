@@ -5,6 +5,12 @@
       <font-awesome-icon icon="fas fa-reply-all" />
     </span>
   </span>
+  <span v-else-if="skill.canSelfCombo()" class="icon-text">
+    <span>{{ skillName }}</span>
+    <span class="icon is-small">
+      <font-awesome-icon icon="fas fa-repeat" />
+    </span>
+  </span>
   <span v-else>
     {{ skillName }}
   </span>

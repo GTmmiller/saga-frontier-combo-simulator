@@ -10,9 +10,10 @@ import {
   faArrowRight,
   faBullseye,
   faReplyAll,
+  faRepeat,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faAngleDown, faArrowRight, faBullseye, faReplyAll);
+library.add(faAngleDown, faArrowRight, faBullseye, faReplyAll, faRepeat);
 
 import "bulma/css/bulma.css";
 
