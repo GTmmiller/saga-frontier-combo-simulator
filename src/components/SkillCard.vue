@@ -45,13 +45,13 @@
         <span class="icon is-small">
           <font-awesome-icon icon="fa-solid fa-bullseye" />
         </span>
-        <ComboTypeTags :comboTypes="skill.recieves" />
+        <ComboTypeTags :comboTypes="skill.recieves" class="is-centered" />
       </div>
       <div class="column has-text-centered">
         <span class="icon is-small">
           <font-awesome-icon icon="fa-solid fa-arrow-right" />
         </span>
-        <ComboTypeTags :comboTypes="skill.sends" />
+        <ComboTypeTags :comboTypes="skill.sends" class="is-centered" />
       </div>
     </div>
   </div>

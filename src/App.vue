@@ -1,9 +1,5 @@
 <template>
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <p class="title">SaGa Frontier Combo Simulator</p>
-    </div>
-  </section>
+  <MenuBar :remasteredNames="remasteredNames" />
 
   <div class="container block">
     <div class="block">
@@ -38,68 +34,21 @@
 
   <footer class="footer">
     <div class="content">
-      <p>Source code for this website is licenced with Apache 2.0</p>
-      <p>Data about the skills can be used freely</p>
-
-      <p>Information for this tool was found in the following sources</p>
-      <ul>
-        <li>
-          <a
-            href="http://sf.data.project.tripod.com/Zaraktheus/Combo_Data_Export.htm"
-          >
-            Combo data and explaination
-          </a>
-          by Henry (Hank) Jones
-        </li>
-        <li>
-          <a
-            href="https://web.archive.org/web/20190627033802/http://uri.sakura.ne.jp/~saga/sf1/neta/combo_st.html"
-          >
-            Japanese source for how Combos Work
-          </a>
-          by リュート16たーぼさん
-        </li>
-        <li>
-          <a
-            href="https://web.archive.org/web/20190519040045/http://www.uri.sakura.ne.jp/~saga/sf1/wazajutu/combo_st.html"
-          >
-            Japanese skill and Combo type list
-          </a>
-          by リュート16たーぼさん
-        </li>
-        <li>
-          <a
-            href="https://essenceofsaga.wordpress.com/home/book-index/combo-system/"
-          >
-            Translation of Kyoji Koizumi (Battle System Director)'s explaination
-            of the Combo system
-          </a>
-          by Sevon
-        </li>
-        <li>
-          <a href="https://essenceofsaga.wordpress.com/home/name-comparisons/">
-            Skill names from the original English translation and from SaGa
-            Frontier Remastered
-          </a>
-          by Sevon
-        </li>
-        <li>
-          <a
-            href="https://www.neoseeker.com/saga-frontier/faqs/32730-combo-a.html"
-          >
-            Combos used to test the simulator
-          </a>
-          by Shippu
-        </li>
-        <li>
-          <a
-            href="https://www.spriters-resource.com/playstation/sagafrontier/sheet/54217/"
-          >
-            Sprite Sheet used to create the favicon for this site
-          </a>
-          by Reichu
-        </li>
-      </ul>
+      <p>Simulator Version: {{ version }}</p>
+      <p>
+        Source code for this website is
+        <a
+          href="https://github.com/GTmmiller/saga-frontier-combo-simulator/blob/main/LICENSE"
+          >licenced with Apache 2.0</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://github.com/GTmmiller/saga-frontier-combo-simulator/blob/main/src/data/skills.json"
+        >
+          Data about the skills can be used freely
+        </a>
+      </p>
 
       <p>This is a fan work created without the intention of profit</p>
       <p>
@@ -115,6 +64,7 @@ import { Combo, Skill } from "./modules/saga-frontier-combo";
 
 import SkillCard from "./components/SkillCard.vue";
 import ComboCard from "./components/ComboCard.vue";
+import MenuBar from "./components/MenuBar.vue";
 
 import jsonSkills from "./data/skills.json";
 
@@ -123,6 +73,7 @@ export default {
   components: {
     SkillCard,
     ComboCard,
+    MenuBar,
   },
   data() {
     let combo = new Combo();
@@ -133,6 +84,7 @@ export default {
       combo,
       skills,
       remasteredNames: false,
+      version: __APP_VERSION__,
     };
   },
   computed: {

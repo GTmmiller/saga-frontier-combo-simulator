@@ -11,6 +11,8 @@ module.exports = {
   globals: {
     require: true,
     module: true,
+    process: true,
+    __APP_VERSION__: true,
   },
   overrides: [
     {

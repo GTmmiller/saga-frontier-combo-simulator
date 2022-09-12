@@ -1,5 +1,5 @@
 <template>
-  <div class="tags is-centered">
+  <div class="tags">
     <span
       class="tag"
       v-for="comboType in comboTypes"
