@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="box has-text-centered">
     <div class="dropdown block" :class="{ 'is-active': dropDownActive }">
       <div class="dropdown-trigger">
         <button class="button" @click="dropDownActive = !dropDownActive">
@@ -10,7 +10,7 @@
         </button>
       </div>
       <div
-        class="dropdown-menu extended-menu"
+        class="dropdown-menu extended-menu has-text-left"
         :class="{ 'is-hidden': !dropDownActive }"
       >
         <div class="dropdown-content scroll-content">
@@ -38,7 +38,7 @@
     </div>
 
     <div
-      class="columns block"
+      class="columns block is-mobile"
       v-if="skill.sends.size !== 0 || skill.recieves.size !== 0"
     >
       <div class="column has-text-centered">

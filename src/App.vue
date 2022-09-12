@@ -9,9 +9,9 @@
       </label>
     </div>
 
-    <div class="columns is-vcentered">
+    <div class="columns is-vcentered main-box">
       <template v-for="(skill, index) in combo" :key="index">
-        <div class="column px-0">
+        <div class="column p-0">
           <SkillCard
             :skill="skill"
             :previousSkill="index > 0 ? combo.getSkill(index - 1) : null"
@@ -23,7 +23,7 @@
         </div>
         <div
           class="column is-narrow"
-          :class="{ 'px-0': comboLevels[index] > 1 }"
+          :class="{ 'py-0': comboLevels[index] > 1 }"
           v-if="index < comboLevels.length"
         >
           <ComboCard :level="comboLevels[index]" />
@@ -114,4 +114,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.main-box {
+  min-height: 10rem;
+}
+</style>

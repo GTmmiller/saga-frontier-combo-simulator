@@ -13,9 +13,11 @@
       <a
         role="button"
         class="navbar-burger"
+        :class="{ 'is-active': menuDropDown }"
         aria-label="menu"
         aria-expanded="false"
         data-target="modalNavBar"
+        @click="menuDropDown = !menuDropDown"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -24,7 +26,11 @@
     </div>
 
     <!-- is Active logic needed here too -->
-    <div id="modalNavBar" class="navbar-menu">
+    <div
+      id="modalNavBar"
+      class="navbar-menu"
+      :class="{ 'is-active': menuDropDown }"
+    >
       <div class="navbar-start">
         <a class="navbar-item" @click="modal = ModalTypes.INSTRUCTIONS">
           Instructions
@@ -88,6 +94,7 @@ export default {
     return {
       modal: ModalTypes.NONE,
       ModalTypes,
+      menuDropDown: false,
     };
   },
   methods: {
