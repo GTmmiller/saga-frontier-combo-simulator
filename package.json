@@ -1,6 +1,6 @@
 {
   "name": "saga-frontier-combo-simulator",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,16 +15,17 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/vue-fontawesome": "^3.0.1",
-    "vue": "^3.2.38",
+    "bulma": "^0.9.4",
     "immutable": "^4.1.0",
-    "bulma": "^0.9.4"
+    "vue": "^3.2.38",
+    "vue-virtual-scroller": "^2.0.0-alpha.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
+    "@testing-library/vue": "^6.6.1",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.2",
-    "@testing-library/vue": "^6.6.1",
     "cypress": "^10.7.0",
     "eslint": "^8.22.0",
     "eslint-plugin-cypress": "^2.12.1",

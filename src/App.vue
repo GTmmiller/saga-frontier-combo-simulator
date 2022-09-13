@@ -23,7 +23,7 @@
         </div>
         <div
           class="column is-narrow"
-          :class="{ 'py-0': comboLevels[index] > 1 }"
+          :class="{ 'p-0': comboLevels[index] > 1 }"
           v-if="index < comboLevels.length"
         >
           <ComboCard :level="comboLevels[index]" />
@@ -60,9 +60,10 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from "vue";
 import { Combo, Skill } from "./modules/saga-frontier-combo";
 
-import SkillCard from "./components/SkillCard.vue";
+//import SkillCard from "./components/SkillCard.vue";
 import ComboCard from "./components/ComboCard.vue";
 import MenuBar from "./components/MenuBar.vue";
 
@@ -71,7 +72,7 @@ import jsonSkills from "./data/skills.json";
 export default {
   name: "App",
   components: {
-    SkillCard,
+    SkillCard: defineAsyncComponent(() => import("./components/SkillCard.vue")),
     ComboCard,
     MenuBar,
   },

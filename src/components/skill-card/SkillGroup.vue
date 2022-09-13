@@ -3,13 +3,16 @@
     <button
       class="button is-info"
       :class="{ 'is-light': !hideSkills }"
-      @click="hideSkills = !hideSkills"
+      @click="
+        hideSkills = !hideSkills;
+        firstRender = true;
+      "
     >
       {{ skillType }}
     </button>
   </div>
   <hr class="dropdown-divider" />
-  <div id="skillBody" :class="{ 'is-hidden': hideSkills }">
+  <div id="skillBody" :class="{ 'is-hidden': hideSkills }" v-if="firstRender">
     <a
       class="dropdown-item"
       v-for="(menuSkill, skillKey) in skillList"
@@ -36,6 +39,7 @@ export default {
   data() {
     return {
       hideSkills: true,
+      firstRender: false,
     };
   },
   props: {
