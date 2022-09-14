@@ -32,15 +32,23 @@
       :class="{ 'is-active': menuDropDown }"
     >
       <div class="navbar-start">
-        <a class="navbar-item" @click="modal = ModalTypes.INSTRUCTIONS">
+        <a
+          role="button"
+          class="navbar-item"
+          @click="modal = ModalTypes.INSTRUCTIONS"
+        >
           Instructions
         </a>
 
-        <a class="navbar-item" @click="modal = ModalTypes.ACKNOWLEDGEMENTS">
+        <a
+          role="button"
+          class="navbar-item"
+          @click="modal = ModalTypes.ACKNOWLEDGEMENTS"
+        >
           Acknowledgements
         </a>
 
-        <a class="navbar-item" @click="modal = ModalTypes.REPORT">
+        <a role="button" class="navbar-item" @click="modal = ModalTypes.REPORT">
           Report an issue
         </a>
       </div>

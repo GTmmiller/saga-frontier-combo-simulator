@@ -1,7 +1,7 @@
 <template>
   <MenuBar :remasteredNames="remasteredNames" />
 
-  <div class="container block">
+  <div class="container block top-container">
     <div class="block">
       <label class="checkbox">
         <input type="checkbox" v-model.lazy="remasteredNames" />
@@ -60,9 +60,11 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from "vue";
+
 import { Combo, Skill } from "./modules/saga-frontier-combo";
 
-import SkillCard from "./components/SkillCard.vue";
+//import SkillCard from "./components/SkillCard.vue";
 import ComboCard from "./components/ComboCard.vue";
 import MenuBar from "./components/MenuBar.vue";
 
@@ -71,7 +73,7 @@ import jsonSkills from "./data/skills.json";
 export default {
   name: "App",
   components: {
-    SkillCard,
+    SkillCard: defineAsyncComponent(() => import("./components/SkillCard.vue")),
     ComboCard,
     MenuBar,
   },
@@ -114,8 +116,16 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../node_modules/bulma/sass/utilities/mixins.sass";
+
 .main-box {
   min-height: 10rem;
+}
+
+.top-container {
+  @include mobile {
+    min-height: 35rem;
+  }
 }
 </style>

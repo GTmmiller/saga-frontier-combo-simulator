@@ -14,6 +14,7 @@
   <hr class="dropdown-divider" />
   <div id="skillBody" :class="{ 'is-hidden': hideSkills }" v-if="firstRender">
     <a
+      role="button"
       class="dropdown-item"
       v-for="(menuSkill, skillKey) in skillList"
       :key="skillKey"
