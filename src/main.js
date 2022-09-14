@@ -13,8 +13,8 @@ import {
   faRepeat,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faAngleDown, faArrowRight, faBullseye, faReplyAll, faRepeat);
+import "./assets/main.scss";
 
-import "bulma/css/bulma.css";
+library.add(faAngleDown, faArrowRight, faBullseye, faReplyAll, faRepeat);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

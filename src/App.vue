@@ -60,10 +60,9 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from "vue";
 import { Combo, Skill } from "./modules/saga-frontier-combo";
 
-//import SkillCard from "./components/SkillCard.vue";
+import SkillCard from "./components/SkillCard.vue";
 import ComboCard from "./components/ComboCard.vue";
 import MenuBar from "./components/MenuBar.vue";
 
@@ -72,7 +71,7 @@ import jsonSkills from "./data/skills.json";
 export default {
   name: "App",
   components: {
-    SkillCard: defineAsyncComponent(() => import("./components/SkillCard.vue")),
+    SkillCard,
     ComboCard,
     MenuBar,
   },
