@@ -9,7 +9,6 @@
         SaGa Frontier Combo Simulator
       </div>
 
-      <!-- Do some is-active stuff for this -->
       <a
         role="button"
         class="navbar-burger"
@@ -25,7 +24,6 @@
       </a>
     </div>
 
-    <!-- is Active logic needed here too -->
     <div
       id="modalNavBar"
       class="navbar-menu"

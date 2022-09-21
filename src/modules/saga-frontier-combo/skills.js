@@ -1,5 +1,8 @@
 import { Set } from "immutable";
 
+/**
+ * A pseudo-enum containing all the combo types a skill could send or recieve.
+ */
 export const ComboTypes = Object.freeze({
   "Dead Stop": "Dead Stop",
   Down: "Down",
@@ -11,8 +14,14 @@ export const ComboTypes = Object.freeze({
   Snow: "Snow",
 });
 
+/**
+ * A Set of all the possible ComboTypes keys for validation purposes.
+ */
 export const ComboTypeKeys = Set(Object.keys(ComboTypes));
 
+/**
+ * A pseudo-enum containing all the possible types of skills.
+ */
 export const SkillTypes = Object.freeze({
   Sword: "Sword",
   Katana: "Katana",
@@ -158,6 +167,9 @@ export class Skill {
   }
 }
 
+/**
+ * A default skill that is used as a placeholder.
+ */
 export const PLACEHOLDER_SKILL = new Skill(
   "No Skill Selected",
   "No Skill Selected",

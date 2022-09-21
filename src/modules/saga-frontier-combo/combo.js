@@ -1,36 +1,34 @@
 import { PLACEHOLDER_SKILL } from "./skills";
 
-// Idea here is we have 5 slots in the combo and the combo outputs
-// What would happen if all the turns were taken "left to right"
-
-// TODO: Add an array taking constructor
-
-// [1] -> [2] -> [3] -> etc
-
+/**
+ * This class represents a restricted round of combat in SaGa Frontier consisting of five skills.
+ * The Combo class can evaluate how/if the skills will combo and provide the level of the combo.
+ *
+ */
 export class Combo {
-  // Constructor -> Creates a fresh combo with 5 static slots
+  /**
+   * Create a Combo object with 5 placeholder slots
+   */
   constructor() {
-    this.skillArray = new Array(5);
+    this.skillArray = new Array(Combo.MAX_COMBO_SLOTS);
     for (let i = 0; i < this.skillArray.length; i++) {
       this.skillArray[i] = PLACEHOLDER_SKILL;
     }
   }
-  // If I can extend array that would be nice -> too permissive
 
-  // Add indexing if possible
-
+  /**
+   * Iterate through the skillArray and return the potential combos.
+   *
+   * A combo object looks like this: { start: Number, end: Number, level: Number }
+   * start is the starting index of the combo and end is the index of the skill ending the combo.
+   * level indicates the level of the combo and is calculated by subtracting end from start.
+   *
+   * Skill compatibility for combos is covered in the Skill canSendCombo/canRecieveCombo methods.
+   * Combos are filtered to remove level 2 combos that start with an attack-all skill.
+   *
+   * @returns {Array<Object>} An array of combo objects
+   */
   getCombos() {
-    // Iterate through the skillArray
-    // combo exists for only 2 or more matchups
-    // State: no combo
-    // iterate from 1 to 5
-    // if n - 1 is comboable with n then create combo
-    // State: in combo
-    // if n -1 is comboable with n then add to combo
-    // At end -> finalize combo if open
-
-    // Combo has level and a range (start-stop)
-    // Output an array of combo objects
     let combos = [];
     let currentCombo = null;
 
@@ -59,21 +57,43 @@ export class Combo {
       currentCombo = null;
     }
 
-    // Filter impossible 2 combos
+    // Filter impossible level 2 combos
 
     return combos.filter(
       (combo) => combo.level !== 2 || !this.getSkill(combo.end).multiTarget
     );
   }
 
+  /**
+   * Set a skill in the selected slot.
+   *
+   * @throws {RangeError} Will error if the index is negative or greater than 4.
+   *
+   * @param {Number} index The index to set the skill.
+   * @param {Skill} skill The skill to set at the index position.
+   */
   setSkill(index, skill) {
+    this.#indexCheck(index);
     this.skillArray[index] = skill;
   }
 
+  /**
+   * Get the skill at the selected slot
+   *
+   * @throws {RangeError} Will error if the index is negative or greater than 4.
+   *
+   * @param {Number} index The index of the skill to return.
+   * @returns {Skill} The skill at the index position.
+   */
   getSkill(index) {
+    this.#indexCheck(index);
     return this.skillArray[index];
   }
 
+  /**
+   * Gets the length of the skillArray.
+   * @returns {Number} The length of the internal skillArray.
+   */
   getLength() {
     return this.skillArray.length;
   }
@@ -82,11 +102,30 @@ export class Combo {
     return this.skillArray[Symbol.iterator]();
   }
 
-  static fromArray(comboArray) {
+  #indexCheck(index) {
+    if (index > Combo.MAX_COMBO_SLOTS - 1 || index < 0) {
+      throw new RangeError("Index must be between 0 and 4");
+    }
+  }
+
+  /**
+   * Create a new combo object from an array of skills. Will pick the first
+   * MAX_COMBO_SLOTS elements from the skillArray parameter.
+   *
+   * @param {Array<Skills>} skillArray An existing array of skills.
+   * @returns {Combo} A combo object using the skill array.
+   */
+  static fromArray(skillArray) {
     const newCombo = new Combo();
-    for (let i = 0; i < Math.min(5, comboArray.length); i++) {
-      newCombo.setSkill(i, comboArray[i]);
+    for (
+      let i = 0;
+      i < Math.min(this.MAX_COMBO_SLOTS, skillArray.length);
+      i++
+    ) {
+      newCombo.setSkill(i, skillArray[i]);
     }
     return newCombo;
   }
+
+  static MAX_COMBO_SLOTS = 5;
 }
