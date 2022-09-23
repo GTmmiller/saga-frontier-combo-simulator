@@ -4,7 +4,7 @@
     Click on one of the five drop downs to select a skill. The 'Combo Skills
     Only' checkbox will filter the drop down to skills that are compatible with
     the previous skill. This filter will display attack-all skills that may not
-    combo due to how the combo sytem works.
+    combo due to how the combo system works.
   </p>
 
   <h2>Symbol Key</h2>
@@ -21,7 +21,7 @@
   <h2>How Combos Work</h2>
   <p>
     Special Moves in SaGa Frontier (Heavy Weapons, Skills, etc) all have skill
-    types that they "send" and skill types that they "recieve". There are eight
+    types that they "send" and skill types that they "receive". There are eight
     total skill types:
   </p>
 
@@ -36,7 +36,7 @@
     <SkillName :skill="stunSlash" :remasteredNames="remasteredNames" />
     sends <span class="tag is-link">Down</span> and
     <SkillName :skill="doubleSlash" :remasteredNames="remasteredNames" />
-    recieves <span class="tag is-link">Down</span>. Nothing can combo after
+    receives <span class="tag is-link">Down</span>. Nothing can combo after
     <SkillName :skill="doubleSlash" :remasteredNames="remasteredNames" />
     because it does not send any combo types to the next slot.
   </p>
@@ -79,7 +79,7 @@
     >. It's only sent by
     <SkillName :skill="finalStrike" :remasteredNames="remasteredNames" /> and
     <SkillName :skill="blizzard" :remasteredNames="remasteredNames" /> and
-    recived by
+    received by
     <SkillName :skill="moonlightCut" :remasteredNames="remasteredNames" />. It's
     possible that Snow was a beta name for the Cold type that slipped past
     testing, but that's pure speculation and may not be true.

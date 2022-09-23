@@ -62,10 +62,10 @@ export class Skill {
    * @param {String} oldName - The name of the skill in the original version
    * @param {String} skillType - The type of skill it is. Should be included in SkillTypes
    * @param {Array<String>} sends - The combo types this skill sends to the next attack.
-   * @param {Array<String>} recieves - The combo types this skill can combo from
-   * @param {Boolean} multiTarget - If the attack is single or multi target. Multi target attacks can only end combos.
+   * @param {Array<String>} receives - The combo types this skill can combo from
+   * @param {Boolean} attackAll - If the attack is single or multi target. Multi target attacks can only end combos.
    */
-  constructor(newName, oldName, skillType, sends, recieves, multiTarget) {
+  constructor(newName, oldName, skillType, sends, receives, attackAll) {
     if (SkillTypes[skillType] === undefined) {
       throw new Error(
         "Skill Type '" + skillType + "' is not a known Skill Type"
@@ -76,9 +76,9 @@ export class Skill {
       throw new Error("Unknown combo type in sends array. sends: " + sends);
     }
 
-    if (!ComboTypeKeys.keySeq().isSuperset(recieves)) {
+    if (!ComboTypeKeys.keySeq().isSuperset(receives)) {
       throw new Error(
-        "Unknown combo type in recieves array. recieves: " + recieves
+        "Unknown combo type in receives array. receives: " + receives
       );
     }
 
@@ -86,8 +86,8 @@ export class Skill {
     this.oldName = oldName;
     this.skillType = skillType;
     this.sends = Set(sends);
-    this.recieves = Set(recieves);
-    this.multiTarget = multiTarget;
+    this.receives = Set(receives);
+    this.attackAll = attackAll;
   }
 
   /**
@@ -105,32 +105,32 @@ export class Skill {
 
   /**
    * Checks if a skill will combo if performed immediately after this skill
-   * Note: This does not consider combo-wide multitarget behavior
+   * Note: This does not consider combo-wide attackAll behavior
    *
    * @param {Skill} nextSkill - The skill to follow the current skill
    * @returns True if the passed in skill will combo. False if it won't.
    */
   canSendCombo(nextSkill) {
-    const compatible = this.sends.intersect(nextSkill.recieves).count() > 0;
-    const doubleMultitarget = this.multiTarget && nextSkill.multiTarget;
-    return compatible && !doubleMultitarget;
+    const compatible = this.sends.intersect(nextSkill.receives).count() > 0;
+    const doubleAttackAll = this.attackAll && nextSkill.attackAll;
+    return compatible && !doubleAttackAll;
   }
 
   /**
    * Checks if a skill that was activated previously would cause this skill to combo
-   * Note: This does not consider combo-wide multitarget behavior
+   * Note: This does not consider combo-wide attackAll behavior
    *
    * @param {Skill} previousSkill - The skill performed on the previous turn
    * @returns True if this skill would combo with the previous skill
    */
-  canRecieveCombo(previousSkill) {
-    const compatible = this.recieves.intersect(previousSkill.sends).count() > 0;
-    const doubleMultitarget = this.multiTarget && previousSkill.multiTarget;
-    return compatible && !doubleMultitarget;
+  canReceiveCombo(previousSkill) {
+    const compatible = this.receives.intersect(previousSkill.sends).count() > 0;
+    const doubleAttackAll = this.attackAll && previousSkill.attackAll;
+    return compatible && !doubleAttackAll;
   }
 
   canSelfCombo() {
-    return this.sends.intersect(this.recieves).size > 0 && !this.multiTarget;
+    return this.sends.intersect(this.receives).size > 0 && !this.attackAll;
   }
 
   static fromJson(jsonObject) {
@@ -139,8 +139,8 @@ export class Skill {
       jsonObject.oldName,
       jsonObject.skillType,
       jsonObject.sends,
-      jsonObject.recieves,
-      jsonObject.multiTarget
+      jsonObject.receives,
+      jsonObject.attackAll
     );
   }
 

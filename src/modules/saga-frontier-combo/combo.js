@@ -23,7 +23,7 @@ export class Combo {
    * start is the starting index of the combo and end is the index of the skill ending the combo.
    * level indicates the level of the combo and is calculated by subtracting end from start.
    *
-   * Skill compatibility for combos is covered in the Skill canSendCombo/canRecieveCombo methods.
+   * Skill compatibility for combos is covered in the Skill canSendCombo/canReceiveCombo methods.
    * Combos are filtered to remove level 2 combos that start with an attack-all skill.
    *
    * @returns {Array<Object>} An array of combo objects
@@ -60,7 +60,7 @@ export class Combo {
     // Filter impossible level 2 combos
 
     return combos.filter(
-      (combo) => combo.level !== 2 || !this.getSkill(combo.end).multiTarget
+      (combo) => combo.level !== 2 || !this.getSkill(combo.end).attackAll
     );
   }
 

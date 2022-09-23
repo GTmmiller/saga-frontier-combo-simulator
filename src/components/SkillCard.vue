@@ -39,13 +39,13 @@
 
     <div
       class="columns block is-mobile"
-      v-if="skill.sends.size !== 0 || skill.recieves.size !== 0"
+      v-if="skill.sends.size !== 0 || skill.receives.size !== 0"
     >
       <div class="column has-text-centered">
         <span class="icon is-small">
           <font-awesome-icon icon="fa-solid fa-bullseye" />
         </span>
-        <ComboTypeTags :comboTypes="skill.recieves" class="is-centered" />
+        <ComboTypeTags :comboTypes="skill.receives" class="is-centered" />
       </div>
       <div class="column has-text-centered">
         <span class="icon is-small">

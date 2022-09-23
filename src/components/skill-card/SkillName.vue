@@ -1,5 +1,5 @@
 <template>
-  <span v-if="skill.multiTarget" class="icon-text">
+  <span v-if="skill.attackAll" class="icon-text">
     <span>{{ skillName }}</span>
     <span class="icon is-small">
       <font-awesome-icon icon="fas fa-reply-all" />

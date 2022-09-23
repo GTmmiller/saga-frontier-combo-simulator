@@ -9,7 +9,7 @@
       <a
         href="http://sf.data.project.tripod.com/Zaraktheus/Combo_Data_Export.htm"
       >
-        Combo data and explaination
+        Combo data and explanation
       </a>
       by Henry (Hank) Jones
     </li>
@@ -34,7 +34,7 @@
         href="https://essenceofsaga.wordpress.com/home/book-index/combo-system/"
       >
         Translation of Kyoji Koizumi's (SaGa Frontier's Battle System Director)
-        explaination of the Combo system
+        explanation of the Combo system
       </a>
       by Sevon
     </li>

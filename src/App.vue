@@ -39,7 +39,7 @@
         Source code for this website is
         <a
           href="https://github.com/GTmmiller/saga-frontier-combo-simulator/blob/main/LICENSE"
-          >licenced with Apache 2.0</a
+          >licensed with Apache 2.0</a
         >
       </p>
       <p>
@@ -64,7 +64,6 @@ import { defineAsyncComponent } from "vue";
 
 import { Combo, Skill } from "./modules/saga-frontier-combo";
 
-//import SkillCard from "./components/SkillCard.vue";
 import ComboCard from "./components/ComboCard.vue";
 import MenuBar from "./components/MenuBar.vue";
 
