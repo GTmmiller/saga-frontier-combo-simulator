@@ -64,6 +64,12 @@ export class Combo {
     );
   }
 
+  indexCheck(index) {
+    if (index > Combo.MAX_COMBO_SLOTS - 1 || index < 0) {
+      throw new RangeError("Index must be between 0 and 4");
+    }
+  }
+
   /**
    * Set a skill in the selected slot.
    *
@@ -73,7 +79,7 @@ export class Combo {
    * @param {Skill} skill The skill to set at the index position.
    */
   setSkill(index, skill) {
-    this.#indexCheck(index);
+    this.indexCheck(index);
     this.skillArray[index] = skill;
   }
 
@@ -86,7 +92,7 @@ export class Combo {
    * @returns {Skill} The skill at the index position.
    */
   getSkill(index) {
-    this.#indexCheck(index);
+    this.indexCheck(index);
     return this.skillArray[index];
   }
 
@@ -100,12 +106,6 @@ export class Combo {
 
   [Symbol.iterator]() {
     return this.skillArray[Symbol.iterator]();
-  }
-
-  #indexCheck(index) {
-    if (index > Combo.MAX_COMBO_SLOTS - 1 || index < 0) {
-      throw new RangeError("Index must be between 0 and 4");
-    }
   }
 
   /**

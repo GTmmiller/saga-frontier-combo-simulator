@@ -24,3 +24,7 @@ pnpm-debug.log*
 
 # hide the mockup for now
 /mockup
+
+# cypress run files
+cypress/videos
+cypress/screenshots
