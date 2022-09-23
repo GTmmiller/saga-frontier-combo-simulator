@@ -46,7 +46,7 @@
         <a
           href="https://github.com/GTmmiller/saga-frontier-combo-simulator/blob/main/src/data/skills.json"
         >
-          Data about the skills can be used freely
+          Skill data can be used freely
         </a>
       </p>
 
