@@ -11,7 +11,7 @@
 
     <div class="columns is-vcentered main-box">
       <template v-for="(skill, index) in combo" :key="index">
-        <div class="column p-0">
+        <div class="column p-0" :id="'skill-card-' + index">
           <SkillCard
             :skill="skill"
             :previousSkill="index > 0 ? combo.getSkill(index - 1) : null"
@@ -22,6 +22,7 @@
           />
         </div>
         <div
+          :id="'combo-card-' + index"
           class="column is-narrow"
           :class="{ 'p-0': comboLevels[index] > 1 }"
           v-if="index < comboLevels.length"

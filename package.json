@@ -1,6 +1,6 @@
 {
   "name": "saga-frontier-combo-simulator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,14 +26,14 @@
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.2",
-    "cypress": "^10.7.0",
+    "cypress": "^13.13.3",
     "eslint": "^8.22.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^9.3.0",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
     "sass": "^1.54.9",
-    "start-server-and-test": "^1.14.0",
+    "start-server-and-test": "^2.0.5",
     "vite": "^3.0.9",
     "vitest": "^0.23.0"
   }

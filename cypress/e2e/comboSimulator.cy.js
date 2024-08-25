@@ -73,8 +73,8 @@ describe("Basic App Interactions", () => {
 describe("Combo and dropdown interactions", () => {
   beforeEach(() => {
     cy.visit("/saga-frontier-combo-simulator");
-    cy.get("div.column.p-0").as("skillCards");
-    cy.get("div.column.is-narrow").as("comboCards");
+    cy.get("div[id^='skill-card-']").as("skillCards");
+    cy.get("div[id^='combo-card-']").as("comboCards");
   });
 
   it("should show a combo panel for a level 2 combo", () => {
